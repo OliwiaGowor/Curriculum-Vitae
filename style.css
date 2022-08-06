@@ -1,0 +1,28 @@
+#nav-left{
+    background-color: #ccbcbc;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+
+}
+
+h1 {
+   font-size: 25px;
+}
+
+#top-header {
+    background-color: #ccbcbc;
+    overflow: hidden;
+    font-size: 16px; 
+    font-weight: 600;
+    padding: 5px 10px;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+
+
+#top-header li {
+    list-style: none;
+    display: inline;
+}
