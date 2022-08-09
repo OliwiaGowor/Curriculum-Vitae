@@ -21,6 +21,7 @@ header.page-header {
     font-weight: 300;
     align-items: center;
     height: 60px;
+
 }
 
 ul.header-nav {
@@ -38,7 +39,8 @@ ul.header-nav {
     display: inline-flex;
     transition: background-color .2s;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
+    
 }
 
 .header-nav li:hover {
@@ -48,6 +50,14 @@ ul.header-nav {
 .header-nav li:hover a{
     color:#46494D;
     transition: 0.1s;
+}
+
+.header-nav a {
+    color: black;
+    text-decoration: none;
+}
+.header-nav a:visited {
+    color: black;
 }
 
 .header-container .theme-icon {
