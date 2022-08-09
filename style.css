@@ -43,12 +43,8 @@ ul.header-nav {
     
 }
 
-.header-nav li:hover {
-    background-color: #DE9EA3;
-}
-
 .header-nav li:hover a{
-    color:#46494D;
+    color:#C14953;
     transition: 0.1s;
 }
 
@@ -62,28 +58,27 @@ ul.header-nav {
 
 .header-container .theme-icon {
     position: relative;
-    height: 50px;
-    min-width: 90px;
-    width: 110px;
+    height: 40px;
+    width: 40px;
     border-radius: 10%;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: background-color .2s;
+    transition: background-color .01s;
 }
 
 .theme-icon:hover {
-    background-color: #DE9EA3;
+    background-color: #D9D3D3;
 }
 
 .header-container .sun-icon-white {
     opacity: 0;
     position: absolute;
-    top: 15%;
+    top: 7%;
     right: 0;
-    left: 36%;
+    left: 13%;
     bottom: 0;
-    transition: opacity .2s;
+    transition: opacity .01s;
 }
 
 .theme-icon:hover .sun-icon-black {
