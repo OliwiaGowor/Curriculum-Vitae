@@ -1,66 +1,77 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Ubuntu', serif;
 }
 
 header.page-header {
     position: fixed;
     top: 0px;
-    width: 100%; 
-    
+    width: 100%;  
+    background-color: #B0ABAB; 
 }
 
 .header-container {
-    background-color: #BB9BB0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     overflow: hidden;
-    font-size: 18px; 
-    font-weight: 600;
+    font-size: 1em; 
+    font-weight: 300;
     align-items: center;
     height: 60px;
 }
-.site-title {
-    min-width: 200px;
-}
 
-ul.header-elements {
+ul.header-nav {
     list-style: none;
     text-align: center;
-    display:flex;
+    display: inline-flex;
+    gap: 10px;
 }
 
-.header-elements li {
-    height: 60px;
-    min-width: 130px;
-    width: 150px;
-    padding-top: 30px;
-    background-color: #A288A6;
-    border-radius: 25%;
-    display: inline-block;
+.header-nav li {
+    height: 50px;
+    min-width: 90px;
+    width: 110px;
+    border-radius: 10%;
+    display: inline-flex;
+    transition: background-color .2s;
+    align-items: center;
+    justify-content: center;
 }
 
-.header-elements li:nth-of-type(7) {
-    justify-self: flex-end;
+.header-nav li:hover {
+    background-color: #DE9EA3;
 }
 
-
-.header-elements a:hover {
-    color:#ccbcbc;
+.header-nav li:hover a{
+    color:#46494D;
     transition: 0.1s;
 }
-.header-elements .theme-icon {
+
+.header-container .theme-icon {
     position: relative;
+    height: 50px;
+    min-width: 90px;
+    width: 110px;
+    border-radius: 10%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s;
 }
 
-.header-elements .sun-icon-white {
+.theme-icon:hover {
+    background-color: #DE9EA3;
+}
+
+.header-container .sun-icon-white {
     opacity: 0;
     position: absolute;
-    top: 0;
+    top: 15%;
     right: 0;
-    left: 40%;
+    left: 36%;
     bottom: 0;
     transition: opacity .2s;
 }
@@ -69,19 +80,17 @@ ul.header-elements {
     transition: 1s;
     rotate: 360deg;
     opacity: 0;
-    
 }
 
 .theme-icon:hover .sun-icon-white {
     transition: 1s;
     rotate: 360deg;
     opacity: 1;
-    
 }
 
-
-
 main {
-    background-color: #ccbcbc;
-    position: static;
+    margin: 0px;
+    padding-top: 70px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
