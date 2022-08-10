@@ -13,7 +13,7 @@ header.page-header {
     padding: 0px;
 }
 
-.header-container {
+.page-header .header-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -23,18 +23,18 @@ header.page-header {
     font-weight: 300;
     align-items: center;
     height: 60px;
-
+    margin: 0px;
 }
 
-.header-nav ul.nav-elements {
+.page-header .header-container .header-nav ul.nav-elements {
     list-style: none;
     text-align: center;
     display: inline-flex;
     gap: 10px;
 }
 
-.header-nav .nav-elements li {
-    height: 50px;
+.page-header .header-container .header-nav .nav-elements li {
+    height: 60px;
     min-width: 90px;
     width: 110px;
     border-radius: 10%;
@@ -44,20 +44,20 @@ header.page-header {
     
 }
 
-.header-nav .nav-elements li:hover a{
+.page-header .header-container .header-nav .nav-elements li:hover a{
     color:#C14953;
     transition: 0.1s;
 }
 
-.header-nav .nav-elements a {
+.page-header .header-container .header-nav .nav-elements a {
     color: black;
     text-decoration: none;
 }
-.header-nav .nav-elements a:visited {
+.page-header .header-container .header-nav .nav-elements a:visited {
     color: black;
 }
 
-.dropdown-arrow {
+.page-header .header-container .header-nav .dropdown-arrow {
     height: 0;
     width: 0;
     border-left: 7px solid transparent;
@@ -67,19 +67,23 @@ header.page-header {
     left: 3%;
   }
   
-  .header-nav .nav-elements li:hover .dropdown-arrow {
+.page-header .header-container .header-nav .nav-elements li:hover .dropdown-arrow {
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
     border-bottom: 7px solid #C14953;
     border-top: 7px solid transparent;
     bottom: 4%;
-  }
+}
 
-.header-nav .contact-dropdown {
-    position: absolute;
+.page-header .header-container .header-nav .contact-dropdown {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 60px;
+    left: 0;
     width: 100%;  
-    background-color: #b0ababb6;
+    background-color: #b0ababe8;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s;
@@ -87,8 +91,9 @@ header.page-header {
     color: black;
 }
 
-.header-nav .contact-dropdown ul{
+.page-header .header-container .header-nav .contact-dropdown ul{
     list-style: none;
+    padding: 0;
     text-align: center;
     display: inline-flex;
     gap: 10px;
@@ -97,25 +102,36 @@ header.page-header {
     flex-wrap: nowrap;justify-content: center;
 }
 
-.header-nav .contact-dropdown li{
-    height: auto;
+.page-header .header-container .header-nav .contact-dropdown li{
+    height: 60px;
     width: 150px;
     border-radius: 10%;
+    padding: 0.5em;
     display: inline-flex;
     align-items: center; 
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    gap: 5px;
     color: black;
 }
 
-.header-nav .contact:hover .contact-dropdown, .header-nav .contact .contact-dropdown:hover{
+.page-header .header-container .header-nav .nav-elements li:hover .contact-dropdown a{
+    color: black;
+}
+
+.page-header .header-container .header-nav .nav-elements .contact-dropdown li:hover a{
+    color:#C14953;
+    transition: 0.1s;
+}
+
+.page-header .header-container .header-nav .contact:hover .contact-dropdown, .header-nav .contact .contact-dropdown:hover{
     visibility: visible;
     opacity: 1;
     transition: 0.1s;
 } 
 
-.header-container .theme-icon {
+.page-header .header-container .theme-icon {
     position: relative;
     height: 45px;
     width: 45px;
@@ -126,16 +142,16 @@ header.page-header {
     transition: background-color .01s;
 }
 
-.header-container .theme-icon a{
+.page-header .header-container .theme-icon a{
     display: inline-flex;
     align-items: center;
 }
 
-.theme-icon:hover {
+.page-header .header-container .theme-icon:hover {
     background-color: #d9d3d39c;
 }
 
-.header-container .sun-icon-white {
+.page-header .header-container .sun-icon-white {
     opacity: 0;
     position: absolute;
     top: 16%;
@@ -145,13 +161,13 @@ header.page-header {
     transition: opacity .01s;
 }
 
-.theme-icon:hover .sun-icon-black {
+.page-header .header-container .theme-icon:hover .sun-icon-black {
     transition: 1s;
     rotate: 360deg;
     opacity: 0;
 }
 
-.theme-icon:hover .sun-icon-white {
+.page-header .header-container .theme-icon:hover .sun-icon-white {
     transition: 1s;
     rotate: 360deg;
     opacity: 1;
@@ -167,6 +183,31 @@ main {
 .main-content {
     display: block;
 }
+
+
+.main-content .education {
+
+}
+
+.main-content .education .education-content .education-elements {
+    list-style: none;
+}
+
+/*.main-content .education .education-content .education-vertical-line {
+    position: absolute;
+    border-left: 2px solid #C14953;
+    height: 106px;
+    top: 59.2%;
+    left: 26.45%;
+}
+.main-content .education .education-content .education-dot{
+    position: relative;
+
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #C14953;
+}*/
 
 
 .footer {
