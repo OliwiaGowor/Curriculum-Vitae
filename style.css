@@ -28,7 +28,8 @@ header.page-header {
 
 .page-header .header-container .header-nav {
     margin: 0;
-    padding: 0 3em;
+    padding-left: 4em;
+    padding-right: 2em;
 }
 
 .page-header .header-container .header-nav ul.nav-elements {
@@ -97,6 +98,7 @@ header.page-header {
     transition: visibility 0s, opacity 0.5s;
     height: auto;
     color: black;
+    box-shadow: 0 5px 5px #46494d77;
 }
 
 .page-header .header-container .header-nav .contact-dropdown ul{
@@ -124,16 +126,16 @@ header.page-header {
     color: black;
 }
 
-.page-header .header-container .header-nav .nav-elements li:hover .contact-dropdown a{
+.page-header .header-container .header-nav .nav-elements li:hover .contact-dropdown a {
     color: black;
 }
 
-.page-header .header-container .header-nav .nav-elements .contact-dropdown li:hover a{
+.page-header .header-container .header-nav .nav-elements .contact-dropdown li:hover a { 
     color:#C14953;
     transition: 0.1s;
 }
 
-.page-header .header-container .header-nav .contact:hover .contact-dropdown, .header-nav .contact .contact-dropdown:hover{
+.page-header .header-container .header-nav .contact:hover .contact-dropdown, .header-nav .contact .contact-dropdown:hover {
     visibility: visible;
     opacity: 1;
     transition: 0.1s;
@@ -149,10 +151,10 @@ header.page-header {
 .page-header .header-container .right-icons {
     display: inline-flex;
     gap: 1em;
-    padding: 0 2em;
+    padding: 0 3.8em;
 }
 
-.page-header .header-container .right-icons .theme-icon,  .page-header .header-container .right-icons .settings-icon{
+.page-header .header-container .right-icons .theme-icon,  .page-header .header-container .right-icons .settings-icon {
     position: relative;
     height: 45px;
     width: 45px;
@@ -161,6 +163,11 @@ header.page-header {
     align-items: center;
     justify-content: center;
     transition: background-color .01s;
+}
+
+.page-header .header-container .right-icons .settings-icon .settings-icon-box {
+    height: 60px;
+    width: 45px;
 }
 
 .page-header .header-container .right-icons .theme-icon a, .page-header .header-container .right-icons .settings-icon a{
@@ -175,9 +182,9 @@ header.page-header {
 .page-header .header-container .right-icons .theme-icon .sun-icon-white {
     opacity: 0;
     position: absolute;
-    top: 16%;
+    top: 23%;
     right: 0;
-    left: 17.2%;
+    left: 23%;
     bottom: 0;
     transition: opacity .01s;
 }
@@ -185,13 +192,20 @@ header.page-header {
 .page-header .header-container .right-icons .settings-icon .settings-icon-white {
     opacity: 0;
     position: absolute;
-    top: 23.3%;
+    top: 27%;
     right: 0;
-    left: 22.2%;
+    left: 28.2%;
     bottom: 0;
     transition: opacity .01s;
 }
 
+.page-header .header-container .right-icons .settings-icon .settings-icon-black {
+    position: absolute;
+    top: 27%;
+    right: 0;
+    left: 28.2%;
+    bottom: 0;
+}
 .page-header .header-container .right-icons .theme-icon:hover .sun-icon-black, .page-header .header-container .right-icons .settings-icon:hover .settings-icon-black {
     transition: 1s;
     rotate: 360deg;
@@ -207,42 +221,78 @@ header.page-header {
 .page-header .header-container .right-icons .settings-icon .settings-dropdown {
     position: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     top: 60px;
-    right: 39px;
+    right: 2em;
     width: 100px;  
+    height: auto;
     background-color: #b0ababe8;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s;
-    height: auto;
     color: black;
+    box-shadow: 0 5px 5px #46494d77;
+    border: 1px solid #afaeae;
 }
 
-.page-header .header-container .right-icons .settings-icon .settings-dropdown ul{
+.page-header .header-container .right-icons .settings-icon .settings-dropdown .settings-header {
+    font-size: 0.5em;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.page-header .header-container .right-icons .settings-icon .settings-dropdown ul.color-circle-elements{
     list-style: none;
-    padding: 0;
+    padding-bottom: 1em;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
     display: inline-flex;
-    gap: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;justify-content: center;
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.5em;
+    margin: 0;
 }
 
-.page-header .header-container .right-icons .settings-icon .settings-dropdown li{
-    height: 60px;
-    width: 150px;
-    border-radius: 10%;
-    padding: 0.5em;
+.page-header .header-container .right-icons .settings-icon .settings-dropdown .color-circle-elements li {
     display: inline-flex;
     align-items: center; 
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    gap: 5px;
-    color: black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%; 
+    transition: background-color .01s;
+}
+
+.page-header .header-container .right-icons .settings-icon .settings-dropdown .color-circle-elements li:hover {
+background-color: #d9d3d39c;
+}
+
+.page-header .header-container .right-icons .settings-icon .settings-dropdown .color-circle-elements .color-circle-pink {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%; 
+    background-color: #C14953;
+}
+
+
+.page-header .header-container .right-icons .settings-icon .settings-dropdown .color-circle-elements .color-circle-green {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%; 
+    background-color: green;
+}
+
+.page-header .header-container .right-icons .settings-icon .settings-dropdown .color-circle-elements .color-circle-blue {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%; 
+    background-color: blue;
 }
 
 .page-header .header-container .right-icons .settings-icon li:hover .settings-dropdown a{
@@ -254,7 +304,7 @@ header.page-header {
     transition: 0.1s;
 }
 
-.page-header .header-container .right-icons .settings-icon:hover .settings-dropdown, .header-nav .contact .settings-dropdown:hover{
+.page-header .header-container .right-icons .settings-icon-box:hover .settings-dropdown, .header-nav .contact .settings-dropdown:hover{
     visibility: visible;
     opacity: 1;
     transition: 0.1s;
@@ -262,39 +312,70 @@ header.page-header {
 
 main {
     margin: 0px;
-    padding-top: 80px;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-top: 60px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .main-content {
     display: block;
 }
 
+main .main-content .home .home-container {
+    position: absolute;
+    top: 150px;
+    left: 20%;
+    right: 20%;
+    color:white
+}
 
-.main-content .education {
+main .main-content .home .home-background {
+    width: 100%;
+    height: 890px;
+    background: linear-gradient(#c14953c7, rgb(255, 255, 255)), url("photos/background-ge19184917_1920.jpg");
+}
 
+main .main-content .home .home-header {
+    font-size: 1.75em;
+
+}
+
+main .main-content .home .introduction {
+    font-size: 1.25em;
+}
+
+main .main-content .home .home-container .home-vertical-line {
+    height: 1px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+main .main-content .home .home-container .introduction {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 1em;
+}
+
+
+.main-content .about .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.main-content .about .about-container .button-CV {
+    display: inline-flex;
+}
+
+.main-content .about .about-container .button-hire-me {
+    display: inline-flex;
 }
 
 .main-content .education .education-content .education-elements {
     list-style: none;
 }
-
-/*.main-content .education .education-content .education-vertical-line {
-    position: absolute;
-    border-left: 2px solid #C14953;
-    height: 106px;
-    top: 59.2%;
-    left: 26.45%;
-}
-.main-content .education .education-content .education-dot{
-    position: relative;
-
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    background-color: #C14953;
-}*/
 
 
 .footer {
