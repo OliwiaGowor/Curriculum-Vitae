@@ -2,6 +2,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(247, 247, 247);
 }
 
 header.page-header {
@@ -325,38 +326,34 @@ main .main-content {
 
 main .main-content .home .home-container {
     position: absolute;
-    top: 150px;
+    top: 165px;
     margin-left: 20%;
     margin-right: 25%;
     color:white
 }
 
-main .main-content .home .home-background {
+.main-content .home .home-background {
     width: 100%;
     height: 890px;
     background: linear-gradient(#c14953c7, rgb(247, 247, 247)), url("photos/background-ge19184917_1920.jpg");
 }
 
-main .main-content .home .home-header {
-    font-size: 1.75em;
-
+.main-content .home .home-container .home-header {
+    font-size: 45px;
+    height: auto;
 }
 
-main .main-content .home .introduction {
-    font-size: 1.25em;
-}
-
-main .main-content .home .home-container .home-vertical-line {
+.main-content .home .home-container .home-vertical-line {
     height: 3px;
     width: 600px;
     background-color: rgb(255, 255, 255);
-
 }
 
-main .main-content .home .home-container .introduction {
+.main-content .home .home-container .introduction {
+    font-size: 1.25em;
     padding-top: 1em;
-    padding-bottom: 1em;
-    line-height: 1em;
+    padding-bottom: 1.5em;
+    line-height: 1.3em;
 }
 
 .main-content .home .home-container .button-more-about-me {
@@ -364,6 +361,14 @@ main .main-content .home .home-container .introduction {
     height: 3em;
     width: 10em;
     border-radius: 20px;
+    background-color: #C14953;
+    color: white;
+    border: 0;
+}
+
+.main-content .home .home-container .button-more-about-me:active {
+    background-color: white;
+    color: #C14953;
 }
 
 .main-content .about .about-container {
@@ -430,7 +435,7 @@ main .main-content .home .home-container .introduction {
 }
 
 .main-content .education .education-container {
-    
+    padding-top: 100px;
 }
 
 .main-content .education .education-container .education-header-container {
@@ -463,9 +468,6 @@ main .main-content .home .home-container .introduction {
     border-width: 1px;
     border-color: #C14953;
     border-radius: 20px;
-}
-
-.main-content .education .education-content .education-elements {
     padding-top: 0;
     padding-left: 1em;
     padding-right: 1em;
@@ -514,7 +516,11 @@ main .main-content .home .home-container .introduction {
 
 .main-content .skills .skills-container
 {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
 }
 
 .main-content .skills .skills-container .skills-header-container .skills-header {
@@ -537,12 +543,27 @@ main .main-content .home .home-container .introduction {
     margin-top: 5px;
 }
 
+.main-content .skills .skills-container .skills-elements {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 50px;
+    padding: 0;
+}
+
+.main-content .skills .skills-container .skills-elements li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main-content .projects .projects-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 5em;
+    padding-top: 100px;
 }
 
 .main-content .projects .projects-container .projects-header-container .projects-header {
@@ -630,7 +651,7 @@ main .main-content .home .home-container .introduction {
     align-items: center;
 }
 
-.main-content .contact .contact-container .contact-form .contact-form-elements input {
+.main-content .contact .contact-container .contact-form .contact-form-elements input, .main-content .contact .contact-container .contact-form .contact-form-elements textarea {
     border-color: #C14953;
     border-width: 1px;
     border-style: solid;
@@ -646,8 +667,8 @@ main .main-content .home .home-container .introduction {
 }
 
 .main-content .contact .contact-container .contact-form .contact-form-elements .message-input {
-    height: 100px;
     width: 962px;
+    resize: none;
 }
 
 .main-content .contact .contact-container .contact-form .contact-form-elements .top-elements {
@@ -665,12 +686,13 @@ main .main-content .home .home-container .introduction {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    background-color: rgba(247, 247, 247);
 }
 
 .footer ul {
     list-style: none;
 }
 
-@media screen {
+@media screen (max-width: 1063px){
     
 }
