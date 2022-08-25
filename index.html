@@ -25,14 +25,14 @@
                         <li class="education"><a href="#education">Education</a></li>
                         <li class="skills"><a href="#skills">Skills</a></li>
                         <li class="projects"><a href="#projects">Projects</a></li>
-                        <li class="contact"><a href="#contact">Contact me </a><div class="dropdown-arrow"></div>
-                            <div class="contact-dropdown">
+                        <li class="contact"><a href="#contact">Contact me </a> <!--<div class="dropdown-arrow"></div>
+                          <div class="contact-dropdown">
                                 <ul>
                                     <li>Phone: <a href="tel:123456789">123456789</a></li>
                                     <li>E-mail: <a href="mailto:oliwiagowor@gmail.com">oliwiagowor@gmail.com</a></li>
                                     <li><a href="https://github.com/OliwiaGowor">Github</a></li>
                                 </ul>
-                            </div>
+                            </div>--> 
                         </li>
                     </ul> 
                 </div>                  
@@ -63,16 +63,30 @@
     <main>
         <div class="main-content">
             <div class="home" id="home">
-                <div class="home-background"></div>
+                <div class="home-background"></div><div class="home-background2"></div>
                 <div class="home-container">
-                    <h1 class="home-header">Hello, my name is Oliwia Gowor</h1>
+                    <h1 class="home-header">Hello, my name is <div class="name">Oliwia Gowor</div></h1>
                     <div class="home-vertical-line"></div>
                     <div class="introduction">
-                        <p>I am a second-year Computer Science student on the Silesian University of Technology. I'm an ambitious person, and my goal is to
-                        continuously develop. I'm inquisitive and I like finding and solving encountered problems. I'm also interested in web development, especially in
-                        Front-End. Apart from that I'm also interested in all creative activities  – both implemented digitally and manually.</p>
+                        <p class="introduction-text">I am a second-year Computer Science student on the Silesian 
+                            University of Technology. I'm interested in web development, especially in
+                       <div class="distinct">Front-End</div>.</p>
                     </div>
-                    <button class="button-more-about-me">More about me</button>
+                    <div class="home-contact">
+                        <ul class="contact-elements">
+                            <li class="contact-element"> 
+                                <div class="distinct">E-mail: </div>
+                                <a href="mailto:oliwiagowor@gmail.com">oliwiagowor@gmail.com</a> 
+                                <div class="copy"><img src="icons/copy-to-clipboard-icon-black.png" class="copy-icon" height="25px" width="25px"></div>
+                            </li>
+                            <li class="contact-element">
+                                <div class="distinct">Phone: </div>
+                                <a href="tel:123456789">123456789</a> 
+                                <div class="copy"><img src="icons/copy-to-clipboard-icon-black.png" class="copy-icon" height="25px" width="25px"></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="button-more-about-me" >More about me</button>
                 </div>
             </div>
                 
@@ -86,17 +100,14 @@
                     </div>
                     <div class="about-content">
                         <div class="about-text-container">
-                            <h2 class="about-text-header">I'm Oliwia Gowor</h2>
+                            <h2 class="about-text-header">Hi! I'm Oliwia Gowor</h2>
                             <p class="about-text">I'm an ambitious person, and my goal is to
                                 continuously develop. I'm inquisitive and I like finding and solving encountered problems. 
                                 I'm also interested in web development, especially in Front-End. Apart from that I'm also 
                                 interested in all creative activities  – both implemented digitally and manually.</p>
                         </div>
                         <ul class="about-elements-grid">
-                            <li><b>Phone:</b> <a href="tel:123456789">123456789</a></li>
-                            <li><b>E-mail:</b> <a href="mailto:oliwiagowor@gmail.com">oliwiagowor@gmail.com</a></li>
                             <li><b>Github:</b> <a href="https://github.com/OliwiaGowor"></a></li>
-                            <li><b>LinkedIn:</b> <a href="https://github.com/OliwiaGowor"></a></li>
                             <li><b>City:</b></li>
                             <li><b>Birthday:</b></li>
                         </ul>
@@ -188,6 +199,7 @@
                             </div>
                         </div>
                         <div class="projects-content">
+                            <div class="button-left"><span class="arrow-top"></span><span class="arrow-bottom"></span></div>
                             <ul class="projects-elements">
                                 <li>
                                     <h2 class="element-header">This interactive website :)</h2>
@@ -202,6 +214,7 @@
                                     <p class="element-description"></p>
                                 </li>
                             </ul>
+                            <div class="button-right"><span class="arrow-top"></span><span class="arrow-bottom"></span></div>
                         </div>
                     </div>
                 </div>

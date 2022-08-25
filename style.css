@@ -9,10 +9,11 @@ header.page-header {
     position: fixed;
     top: 0px;
     width: 100%;  
-    background-color: #b0ababde; 
+    background-color: white; 
     margin: 0px;
     padding: 0px;
     z-index: 99;
+    box-shadow: 0 5px 15px #46494d23;
 }
 
 .page-header .header-container {
@@ -67,7 +68,7 @@ header.page-header {
 .page-header .header-container .header-nav .nav-elements a:visited {
     color: black;
 }
-
+/*
 .page-header .header-container .header-nav .dropdown-arrow {
     height: 0;
     width: 0;
@@ -100,7 +101,7 @@ header.page-header {
     transition: visibility 0s, opacity 0.5s;
     height: auto;
     color: black;
-    box-shadow: 0 5px 5px #46494d77;
+    box-shadow: 0 5px 5px #46494d23;
 }
 
 .page-header .header-container .header-nav .contact-dropdown ul{
@@ -142,7 +143,7 @@ header.page-header {
     opacity: 1;
     transition: 0.1s;
 } 
-
+*/
 .page-header .header-container .navbar-space {
     display: flex;
     height: auto;
@@ -230,13 +231,13 @@ header.page-header {
     right: 2em;
     width: 100px;  
     height: auto;
-    background-color: #b0ababe8;
+    background-color: white;
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s;
     color: black;
-    box-shadow: 0 5px 5px #46494d77;
-    border: 1px solid #afaeae;
+    box-shadow: 0 5px 5px #46494d23;
+    border: 1px solid #e1e1e1;
 }
 
 .page-header .header-container .right-icons .settings-icon .settings-dropdown .settings-header {
@@ -323,50 +324,115 @@ main .main-content {
     /*background-color: rgba(247, 247, 247);*/
 }
 
-main .main-content .home .home-container {
+.main-content .home .home-container {
     position: absolute;
-    top: 165px;
-    margin-left: 20%;
-    margin-right: 25%;
-    color:white
+    top: 150px; 
 }
 
 .main-content .home .home-background {
-    width: 100%;
-    height: 890px;
-    background: linear-gradient(#c14953c7, rgb(255, 255, 255)), url("photos/background-ge19184917_1920.jpg");
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #C14953;
+    left: 60%;
+    overflow: hidden;
+    /*background: linear-gradient(#c14953c7, rgb(255, 255, 255)), url("photos/background-ge19184917_1920.jpg");*/
+}
+
+.main-content .home .home-background2 {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #C14953;
+    left: 60%;
+    top: -200px;
+    overflow: hidden;
+    /*background: linear-gradient(#c14953c7, rgb(255, 255, 255)), url("photos/background-ge19184917_1920.jpg");*/
 }
 
 .main-content .home .home-container .home-header {
     font-size: 45px;
     height: auto;
+    margin-left: 15%;
+    margin-right: 45%;
 }
 
-.main-content .home .home-container .home-vertical-line {
+
+.main-content .home .home-container .home-header .name {
+    display: inline;
+    color: #C14953;
+}
+
+/*.main-content .home .home-container .home-vertical-line {
     height: 3px;
     width: 600px;
-    background-color: rgb(255, 255, 255);
-}
+    background-color: rgb(0, 0, 0);
+}*/
 
 .main-content .home .home-container .introduction {
-    font-size: 1.25em;
-    padding-top: 1em;
-    padding-bottom: 1.5em;
+    font-size: 1em;
     line-height: 1.3em;
+    color: black;
+    margin-left: 15%;
+    margin-right: 45%;
+}
+
+.main-content .home .home-container .introduction .introduction-text {
+    display: inline;
+}
+
+.main-content .home .home-container .introduction .distinct {
+    display: inline;
+    color: #C14953;
+    font-weight: bold;
+}
+
+.main-content .home .home-container .home-contact {
+    margin-left: 15%;
+    margin-top: 50px;
+}
+
+.main-content .home .home-container .home-contact .contact-elements {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(1, 90px);
+    padding: 0;
+}
+
+.main-content .home .home-container .home-contact .contact-elements .contact-element .distinct {
+    font-weight: bold;
+}
+
+.main-content .home .home-container .home-contact .contact-elements .contact-element a {
+    color: black;
+    text-decoration: none;
+    display: inline;
+    margin-right: 10px;
+}
+
+.main-content .home .home-container .home-contact .contact-elements .contact-element a:hover {
+    color: #C14953;
+}
+
+.main-content .home .home-container .home-contact .contact-elements .contact-element .copy {
+    display: inline;
 }
 
 .main-content .home .home-container .button-more-about-me {
-    font-size: 20px;
-    height: 3em;
-    width: 10em;
+    font-size: 16px;
     border-radius: 20px;
     background-color: #C14953;
     color: white;
     border: 0;
+    padding: 18px 32px;
+    margin-left: 15%;
 }
 
 .main-content .home .home-container .button-more-about-me:active {
-    background-color: white;
+    background-color: #EFD1D4;
     color: #C14953;
 }
 
@@ -376,7 +442,7 @@ main .main-content .home .home-container {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: -50px;
+    top: -100px;
     width: 100%;
 }
 
@@ -435,12 +501,19 @@ main .main-content .home .home-container {
     padding-top: 15px;
 }
 
-.main-content .about .about-container .about-content button {
-    width: 100px;
-    height: 50px;
-    background-color: #C14953;
+.main-content .about .about-container button {
+    font-size: 16px;
     border-radius: 20px;
+    background-color: #C14953;
     color: white;
+    border: 0;
+    padding: 18px 32px;
+    margin-left: 15%;
+}
+
+.main-content .about .about-container button:active {
+    background-color: #EFD1D4;
+    color: #C14953;
 }
 
 .main-content .education .education-container {
@@ -480,9 +553,8 @@ main .main-content .home .home-container {
 
 .main-content .education .education-content {
     display: grid;
-    grid-template-columns: repeat(2, 600px);
+    grid-template-columns: 600px 400px;
     column-gap: 100px;
-    padding-left: 250px;
 }
 
 .main-content .education .education-content .education-elements {
@@ -553,8 +625,6 @@ main .main-content .home .home-container {
     justify-content: center;
     align-items: center;
     padding-top: 100px;
-    width: 100%;
-    padding-left: 50px;
 }
 
 .main-content .skills .skills-container .skills-header-container {
@@ -585,6 +655,8 @@ main .main-content .home .home-container {
     display: grid;
     grid-template-columns: repeat(2, 500px);
     column-gap: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements {
@@ -604,7 +676,7 @@ main .main-content .home .home-container {
     border-radius: 20px;
     width: 150px;
     height: 180px;
-    box-shadow: 0 0 10px 5px #d9d3d3d6;
+    box-shadow: 0 0 10px 5px #46494d23;
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements li:hover {
@@ -685,7 +757,96 @@ main .main-content .home .home-container {
     margin-top: 5px;
 }
 
-.main-content .projects .projects-container .projects-elements {
+.main-content .projects .projects-container .projects-content .button-left, .main-content .projects .projects-container .projects-content .button-right {
+    position: absolute;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    top: 3130px;
+    right: 1222px;
+    border-radius: 50%;
+    background-color: #efd1d47e;
+}
+
+.main-content .projects .projects-container .projects-content .button-right {
+    left: 1222px;
+}
+
+.main-content .projects .projects-container .projects-content .button-left:hover, .main-content .projects .projects-container .projects-content .button-right:hover {
+    background-color: #efd1d4ab;
+    height: 80px;
+    width: 80px;
+    top: 3125px;
+    transition: 0.5s;
+}
+
+.main-content .projects .projects-container .projects-content .button-right .arrow-top, .main-content .projects .projects-container .projects-content .button-right .arrow-bottom {
+    display: inline-block;
+    position: relative;
+    height: 4px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.466);
+    transform: rotate(45deg);
+    top: 10px;
+    left: 25px;
+    border-radius: 20px;
+}
+
+.main-content .projects .projects-container .projects-content .button-right .arrow-bottom {
+    transform: rotate(-45deg);
+    top: 30px;
+    left: -5px;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.main-content .projects .projects-container .projects-content .button-right:hover .arrow-top {
+    transition: 0.5s;
+    top: 15px;
+    left: 30px;
+    background-color: rgb(0, 0, 0);
+}
+
+.main-content .projects .projects-container .projects-content .button-right:hover .arrow-bottom {
+    transition: 0.5s;
+    top: 35px;
+    left: 0px;
+    background-color: rgb(0, 0, 0);
+}
+
+.main-content .projects .projects-container .projects-content .button-left .arrow-top, .main-content .projects .projects-container .projects-content .button-left .arrow-bottom {
+    display: inline-block;
+    position: relative;
+    height: 4px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0.466);
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 20px;
+    border-radius: 20px;
+}
+
+.main-content .projects .projects-container .projects-content .button-left .arrow-bottom {
+    transform: rotate(45deg);
+    top: 30px;
+    left: -10px;
+    background-color: rgba(0, 0, 0, 0.466);
+}
+
+.main-content .projects .projects-container .projects-content .button-left:hover .arrow-top {
+    transition: 0.5s;
+    top: 15px;
+    left: 25px;
+    background-color: rgb(0, 0, 0);
+}
+
+.main-content .projects .projects-container .projects-content .button-left:hover .arrow-bottom {
+    transition: 0.5s;
+    top: 35px;
+    left: -5px;
+    background-color: rgb(0, 0, 0);
+}
+
+.main-content .projects .projects-container .projects-content .projects-elements {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -693,9 +854,10 @@ main .main-content .home .home-container {
     list-style: none;
     margin: 0;
     padding-top: 50px;
+    padding-left: 0;
 }
 
-.main-content .projects .projects-container .projects-elements li {
+.main-content .projects .projects-container .projects-content .projects-elements li {
     width: 300px;
     height: 400px;
     padding: 1em;
@@ -704,7 +866,7 @@ main .main-content .home .home-container {
     border-width: 2px;
     border-color: #C14953;
     border-style: solid;
-    box-shadow: 0 0 10px 5px #d9d3d3ef;
+    box-shadow: 0 0 10px 5px #46494d23;
 }
 
 .main-content .contact .contact-container
