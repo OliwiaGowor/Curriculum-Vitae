@@ -359,7 +359,6 @@ main .main-content {
     margin-right: 45%;
 }
 
-
 .main-content .home .home-container .home-header .name {
     display: inline;
     color: #C14953;
@@ -447,7 +446,7 @@ main .main-content {
 }
 
 .main-content .about .about-container .about-header-container {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .main-content .about .about-container .about-header-container .about-header {
@@ -472,13 +471,15 @@ main .main-content {
 }
 
 .main-content .about .about-container .about-content {
-    display: grid;
-    grid-template-columns: repeat(2, 550px);
-    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-content .about .about-container .about-content .about-text-container {
-    width: 500px;
+    display: block;
+    width: 1100px;
 }
 
 .main-content .about .about-container .about-content .about-text-container .about-text-header {
@@ -486,19 +487,44 @@ main .main-content {
     color: #C14953;
 }
 
-.main-content .about .about-container .about-content .about-elements-grid {
+.main-content .about .about-container .about-content .about-grid {
     display: grid;
-    grid-template-columns: repeat(2, 250px);
-    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: 300px 1px 300px;
+    grid-template-rows: repeat(1, 200px);
+    column-gap: 150px;
+    justify-items: center;
+    padding-top: 40px;
+}
+
+.main-content .about .about-container .about-content .about-grid .about-elements-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: repeat(4, 50px);
     column-gap: 40px;
     list-style: none;
     padding: 0;
     margin: 0;
+    align-items: flex-end;
 }
 
-.main-content .about .about-container .about-content .about-elements-grid li {
+.main-content .about .about-container .about-content .about-grid .about-elements-grid li {
     border-bottom: 2px solid #C14953;
     padding-top: 15px;
+}
+
+.main-content .about .about-container .about-content .about-grid .vertical-line {
+    height: 220px;
+    width: 2px;
+    background-color: #C14953;
+}
+
+.main-content .about .about-container .about-content .about-grid .languages-container .languages-header {
+    color: #C14953;
+}
+
+.main-content .about .about-container .about-content .about-grid .languages-container .languages {
+    list-style: none;
+    padding: 0;
 }
 
 .main-content .about .about-container button {
@@ -508,7 +534,7 @@ main .main-content {
     color: white;
     border: 0;
     padding: 18px 32px;
-    margin-left: 15%;
+    margin-top: 80px;
 }
 
 .main-content .about .about-container button:active {
@@ -655,8 +681,6 @@ main .main-content {
     display: grid;
     grid-template-columns: repeat(2, 500px);
     column-gap: 100px;
-    padding-right: 50px;
-    padding-left: 50px;
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements {
@@ -758,18 +782,18 @@ main .main-content {
 }
 
 .main-content .projects .projects-container .projects-content .button-left, .main-content .projects .projects-container .projects-content .button-right {
-    position: absolute;
+    position: relative;
     display: inline-block;
     height: 70px;
     width: 70px;
-    top: 3130px;
-    right: 1222px;
+    top: 218px;
     border-radius: 50%;
     background-color: #efd1d47e;
+    right: 25px;
 }
 
 .main-content .projects .projects-container .projects-content .button-right {
-    left: 1222px;
+    left: 1065px;
 }
 
 .main-content .projects .projects-container .projects-content .button-left:hover, .main-content .projects .projects-container .projects-content .button-right:hover {
@@ -851,6 +875,8 @@ main .main-content {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    top: -70px;
     list-style: none;
     margin: 0;
     padding-top: 50px;
