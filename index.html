@@ -63,8 +63,10 @@
     <main>
         <div class="main-content">
             <div class="home" id="home">
-                <div class="home-background"></div><div class="home-background2"></div>
                 <div class="home-container">
+                    <svg class="home-blob" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#C14953" d="M43.5,-57.2C54.5,-42.7,60.3,-27.1,65.8,-9.6C71.3,8,76.5,27.6,70.5,43.3C64.5,58.9,47.2,70.7,29.4,74.4C11.5,78.2,-6.9,74,-23.5,66.9C-40,59.8,-54.5,49.9,-57.4,37C-60.2,24.1,-51.4,8.3,-50.3,-10.8C-49.2,-29.8,-55.9,-52.2,-48.8,-67.4C-41.7,-82.6,-20.8,-90.7,-2.3,-88C16.3,-85.2,32.5,-71.7,43.5,-57.2Z" transform="translate(100 100)" />
+                      </svg>                      
                     <h1 class="home-header">Hello, my name is <div class="name">Oliwia Gowor</div></h1>
                     <div class="home-vertical-line"></div>
                     <div class="introduction">
@@ -89,7 +91,7 @@
                     <button type="button" class="button-more-about-me" >More about me</button>
                 </div>
             </div>
-                
+
             <div class="about" id="about">
                 <div class="about-container">
                     <div class="about-header-container">
@@ -163,6 +165,7 @@
                                 <span class="line-longer"></span> <span class="line-shorter"></span>
                             </div>
                         </div>
+                        <p class="skills-text">I'm always open and ready to learn new skills and expand my knowledge!</p>
                         <div class="skills-content">
                             <img src="photos/skills-photo.png" class="skills-photo" width="463px" height="450px">
                             <ul class="skills-elements">
@@ -248,12 +251,31 @@
                                     <textarea class="message-input" placeholder="Your message" rows="10" required></textarea>
                             </div>    
                         </form>  
-                        <h2 class="header-other-ways">OTHER WAYS OF CONTACT</h2>
-                        <ul class="contact-elements">
-                            <li>Phone: <a href="tel:123456789">123456789</a></li>
-                            <li>E-mail: <a href="mailto:oliwiagowor@gmail.com">oliwiagowor@gmail.com</a></li>
-                            <li><a href="https://github.com/OliwiaGowor">Github</a></li>
-                        </ul>
+                        <div class="other-ways-contact">
+                            <h2 class="header-other-ways">OTHER WAYS OF CONTACT</h2>
+                            <ul class="contact-elements">
+                                <li> 
+                                    <a href="tel:123456789">
+                                        <img class="phone-icon" src="icons/phone-icon-black.png" height="20px" width="20px"> 
+                                    123456789</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:oliwiagowor@gmail.com">
+                                        <img class="email-icon" src="icons/email-icon-black.png" height="20px" width="20px">
+                                        oliwiagowor@gmail.com</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/OliwiaGowor">
+                                        <img class="github-icon" src="icons/github-icon-black.png" height="20px" width="20px">
+                                        Github</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/oliwia-gowor/">
+                                        <img class="linkeedin-icon" src="icons/linkedin-icon-black.png" height="20px" width="20px">
+                                        LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
         </div>
