@@ -12,11 +12,17 @@
 
 <body>   
     <header class="page-header"> 
-        <div class="header-container">
-                
+        <div class="header-container">   
             <nav>
                 <div class="nav-mobile">
-                    <a id="nav-toggle" href="#!"> <div class="hamburger-icon-mobile"><span></span> <span></span> <span></span></div></a>
+                    <div class="hamburger-icon-mobile">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
                 <div class="header-nav">
                     <ul class="nav-elements">
@@ -243,12 +249,16 @@
                             <h2 class="form-header">WRITE ME A MESSAGE!</h1>
                             <h3 class="form-second-header">I'll respond as fast as I can!</h2>
                             <div class="contact-form-elements">
-                                <div class="top-elements">  
-                                    <input type="text" class="name-input" placeholder="Your name" required>
-                                    <input type="email" class="email-input" placeholder="Your e-mail" required>
-                                </div>  
-                                    <input type="text" class="topic-input" placeholder="Topic" required>
-                                    <textarea class="message-input" placeholder="Your message" rows="10" required></textarea>
+                                <div class="top-elements"> 
+                                    <label for="name-input">Your name</label> 
+                                    <input type="text" class="name-input" placeholder="Write your name" required>
+                                    <label for="name-input">Your e-mail</label>
+                                    <input type="email" class="email-input" placeholder="Write your e-mail" required>
+                                </div>
+                                    <label for="topic-input">Topic</label>  
+                                    <input type="text" class="topic-input" placeholder="Write topic" required>
+                                    <label for="message-input">Your message</label>
+                                    <textarea class="message-input" placeholder="Write your message" rows="10" required></textarea>
                             </div>    
                         </form>  
                         <div class="other-ways-contact">
