@@ -27,11 +27,11 @@
                 <div class="header-nav">
                     <ul class="nav-elements">
                         <li class="home"><a href="#home">Home</a></li>
-                        <li class="about"><a href="#about">About me</a></li>
+                        <li class="about"><a href="#about">About</a></li>
                         <li class="education"><a href="#education">Education</a></li>
                         <li class="skills"><a href="#skills">Skills</a></li>
                         <li class="projects"><a href="#projects">Projects</a></li>
-                        <li class="contact"><a href="#contact">Contact me </a> <!--<div class="dropdown-arrow"></div>
+                        <li class="contact"><a href="#contact">Contact</a> <!--<div class="dropdown-arrow"></div>
                           <div class="contact-dropdown">
                                 <ul>
                                     <li>Phone: <a href="tel:123456789">123456789</a></li>
@@ -70,9 +70,8 @@
         <div class="main-content">
             <div class="home" id="home">
                 <div class="home-container">
-                    <svg class="home-blob" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#C14953" d="M43.5,-57.2C54.5,-42.7,60.3,-27.1,65.8,-9.6C71.3,8,76.5,27.6,70.5,43.3C64.5,58.9,47.2,70.7,29.4,74.4C11.5,78.2,-6.9,74,-23.5,66.9C-40,59.8,-54.5,49.9,-57.4,37C-60.2,24.1,-51.4,8.3,-50.3,-10.8C-49.2,-29.8,-55.9,-52.2,-48.8,-67.4C-41.7,-82.6,-20.8,-90.7,-2.3,-88C16.3,-85.2,32.5,-71.7,43.5,-57.2Z" transform="translate(100 100)" />
-                      </svg>                      
+                    <img class="home-background" src="photos/home-background.svg">     
+                    <img class="home-blob" src="photos/blob-home.svg">                
                     <h1 class="home-header">Hello, my name is <div class="name">Oliwia Gowor</div></h1>
                     <div class="home-vertical-line"></div>
                     <div class="introduction">
@@ -113,6 +112,7 @@
                                 I'm also interested in web development, especially in Front-End. Apart from that I'm also 
                                 interested in all creative activities  – both implemented digitally and manually.</p>
                         </div>
+                        <span class="vertical-line"></span>
                         <div class="about-grid">
                             <ul class="about-elements-grid">
                                 <li><b>Name: </b>Oliwia Gowor</li>
@@ -120,14 +120,8 @@
                                 <li><b>Place: </b>Gliwice, Poland</li>
                                 <li><b>Birthday: </b>30.07.2001</li>
                             </ul>
-                            <span class="vertical-line"></span>
-                            <div class="languages-container">
-                                <h2 class="languages-header">Languages</h2>
-                                <ul class="languages">
-                                    <li><b>Polish: </b>native</li>
-                                    <li><b>English: </b>B2</li>
-                                </ul>
-                            </div>
+                            
+                            
                         </div>
                     </div>
                     <button class="button-CV"><img src="icons/download-icon-white.png" class="download-icon" width="18px" height="18px">Download my CV</button>
@@ -173,37 +167,55 @@
                         </div>
                         <p class="skills-text">I'm always open and ready to learn new skills and expand my knowledge!</p>
                         <div class="skills-content">
-                            <img src="photos/skills-photo.png" class="skills-photo" width="463px" height="450px">
-                            <ul class="skills-elements">
-                                <li>
-                                    <img src="icons/html-icon.png" class="html-icon" width="60px" height="70px">
-                                    <p class="element-text">HTML</p> 
-                                    <div class="arrow">
-                                        <span class="arrow-line"></span><span class="arrow-left"></span><span class="arrow-right"></span>
-                                    </div> 
-                                </li>
-                                <li>
-                                    <img src="icons/css-icon.png" class="css-icon" width="60px" height="70px">
-                                    <p class="element-text">CSS</p>
-                                    <div class="arrow">
-                                        <span class="arrow-line"></span><span class="arrow-left"></span><span class="arrow-right"></span>
-                                    </div> 
-                                </li>
-                                <li>
-                                    <img src="icons/cpp-icon.png" class="cpp-icon" width="65px" height="70px">
-                                    <p class="element-text">C++</p>
-                                    <div class="arrow">
-                                        <span class="arrow-line"></span><span class="arrow-left"></span><span class="arrow-right"></span>
-                                    </div> 
-                                </li>
-                                <li>
-                                    <img src="icons/sql-icon.png" class="sql-icon" width="70px" height="70px">
-                                    <p class="element-text">SQL</p>
-                                    <div class="arrow">
-                                        <span class="arrow-line"></span><span class="arrow-left"></span><span class="arrow-right"></span>
-                                    </div> 
-                                </li>
-                            </ul>
+                            <div class="first-part-skills">
+                                <img src="photos/skills-photo.png" class="skills-photo" width="463px" height="450px">
+                                <ul class="skills-elements">
+                                    <li>
+                                        <img src="icons/html-icon.png" class="html-icon" width="60px" height="70px">
+                                        <p class="element-text">HTML</p> 
+                                        <div class="arrow">
+                                            <span class="arrow-line"></span><span class="arrow-left"></span><span class="arrow-right"></span>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <img src="icons/css-icon.png" class="css-icon" width="60px" height="70px">
+                                        <p class="element-text">CSS</p>
+                                        <div class="arrow">
+                                            <span class="arrow-line"></span><span class="arrow-left"></span><span class="arrow-right"></span>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <img src="icons/cpp-icon.png" class="cpp-icon" width="65px" height="70px">
+                                        <p class="element-text">C++</p>
+                                        <div class="arrow">
+                                            <span class="arrow-line"></span><span class="arrow-left"></span><span class="arrow-right"></span>
+                                        </div> 
+                                    </li>
+                                    <li>
+                                        <img src="icons/sql-icon.png" class="sql-icon" width="70px" height="70px">
+                                        <p class="element-text">SQL</p>
+                                        <div class="arrow">
+                                            <span class="arrow-line"></span><span class="arrow-left"></span><span class="arrow-right"></span>
+                                        </div> 
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="second-part-skills">
+                                <div class="languages-container">
+                                    <h2 class="languages-header">Languages</h2>
+                                    <ul class="languages">
+                                        <li><b>Polish: </b>native</li>
+                                        <li><b>English: </b>B2</li>
+                                    </ul>
+                                </div>
+                                <div class="soft-skills-container">
+                                    <h2 class="soft-skills-header">Soft skills</h2>
+                                    <ul class="soft-skills">
+                                        <li></li>
+                                        <li></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -250,15 +262,23 @@
                             <h3 class="form-second-header">I'll respond as fast as I can!</h2>
                             <div class="contact-form-elements">
                                 <div class="top-elements"> 
-                                    <label for="name-input">Your name</label> 
-                                    <input type="text" class="name-input" placeholder="Write your name" required>
-                                    <label for="name-input">Your e-mail</label>
-                                    <input type="email" class="email-input" placeholder="Write your e-mail" required>
+                                    <div class="name-input-container">
+                                        <label for="name-input">Your name</label> 
+                                        <input type="text" class="name-input" placeholder="Write your name" required>
+                                    </div>
+                                    <div class="email-input-container">
+                                        <label for="name-input">Your e-mail</label>
+                                        <input type="email" class="email-input" placeholder="Write your e-mail" required>
+                                    </div>
                                 </div>
+                                <div class="text-input-container">
                                     <label for="topic-input">Topic</label>  
                                     <input type="text" class="topic-input" placeholder="Write topic" required>
+                                </div>    
+                                <div class="message-input-container">
                                     <label for="message-input">Your message</label>
                                     <textarea class="message-input" placeholder="Write your message" rows="10" required></textarea>
+                                </div>
                             </div>    
                         </form>  
                         <div class="other-ways-contact">
@@ -296,6 +316,7 @@
             <ul>
                 <li>Made by Oliwia Gowor</li>
             </ul>
+            <img src="photos/footer-wave.svg" class="footer-wave">
         </div>
     </footer>
 
