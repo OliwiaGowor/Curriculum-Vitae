@@ -330,21 +330,30 @@ main .main-content {
 
 .main-content .home .home-background {
     position: absolute;
-    width: 100%;
-    top: 40px;
     opacity: 70%;
+    width: 100%;
+    height: 1000px;
+    top: 0;
+    background: url(photos/home-background.svg) no-repeat;
+    background-size: contain;
+    z-index: 0;
 }
 
 .main-content .home .home-blob {
     position: absolute;
-    width: 700px;
-    top: 70px;
+    width: 1000px;
+    height: 600px;
+    top: 120px;
     left: 60%;
+    background: url(photos/blob-home.svg) no-repeat;
+    background-size: contain;
+    z-index: 5;
 }
 
 .main-content .home .home-container {
     padding-top: 180px;
     padding-bottom: 350px;
+    position: relative;
 }
 
 .main-content .home .home-container .home-header {
@@ -380,7 +389,7 @@ main .main-content {
 
 .main-content .home .home-container .introduction .distinct {
     display: inline;
-    color: #B63E48;
+    color: #b63e48;
     font-weight: bold;
 }
 
@@ -423,7 +432,7 @@ main .main-content {
 .main-content .home .home-container .button-more-about-me {
     font-size: 16px;
     border-radius: 20px;
-    background-color: #708D5B;
+    background-color: hsl(95, 22%, 45%);
     color: white;
     border: 0;
     padding: 18px 32px;
@@ -442,6 +451,7 @@ main .main-content {
     justify-content: center;
     position: relative;
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .main-content .about .about-container .about-header-container {
@@ -457,7 +467,7 @@ main .main-content {
     display: block;
     width: 100px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-bottom: 5px;
 }
 
@@ -465,21 +475,32 @@ main .main-content {
     display: block;
     width: 50px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-top: 5px;
 }
 
 .main-content .about .about-container .about-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 100px;
 }
 
+.main-content .about .about-container .about-content .languages-blob {
+    position: absolute;
+    height: 700px;
+    width: 1200px;
+    left: 0;
+    /*background: url(photos/languages-blob.svg) no-repeat;*/
+    background-size: contain;
+    z-index: 0;
+}
+
 .main-content .about .about-container .about-content .about-text-container {
     display: block;
-    width: 330px;
+    width: 58%;
+    z-index: 3;
 }
 
 .main-content .about .about-container .about-content .about-text-container .about-text-header {
@@ -487,19 +508,19 @@ main .main-content {
     color: #B63E48;
 }
 
-.main-content .about .about-container .about-content .vertical-line {
-    height: 220px;
-    width: 2px;
-    background-color: #B63E48;
+.main-content .about .about-container .about-content .about-text-container .about-text {
+    font-size: 18px;
 }
 
 .main-content .about .about-container .about-content .about-grid {
-    display: grid;
-    grid-template-columns: repeat(1 330px);
-    grid-template-rows: repeat(1, 200px);
-    column-gap: 100px;
-    justify-items: center;
-    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: -60px;
+    padding-right: 72px;
+    gap: 100px;
 }
 
 .main-content .about .about-container .about-content .about-grid .about-elements-grid {
@@ -511,6 +532,10 @@ main .main-content {
     padding: 0;
     margin: 0;
     align-items: flex-end;
+    background-color: #EFD1D4;
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 40px;
 }
 
 .main-content .about .about-container .about-content .about-grid .about-elements-grid li {
@@ -518,9 +543,22 @@ main .main-content {
     padding-top: 15px;
 }
 
+.main-content .about .about-container .about-content .about-grid .languages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFD1D4;
+    border-radius: 20px;
+    padding: 30px 60px;
+    position: relative;
+    top: 80px;
+}
+
 .main-content .about .about-container .about-content .about-grid .languages-container .languages-header {
     color: #B63E48;
     margin: 0;
+    z-index: 3;
 }
 
 .main-content .about .about-container .about-content .about-grid .languages-container .languages {
@@ -530,6 +568,8 @@ main .main-content {
     list-style: none;
     padding-top: 20px;
     padding-left: 0;
+    z-index: 3;
+    column-gap: 50px;
 }
 
 .main-content .about .about-container .about-content .about-grid .languages-container .languages li {
@@ -537,17 +577,29 @@ main .main-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    width: 150px;
-    border-radius: 20px;
-  
-    box-shadow: 0 0 10px 5px #d9d3d3d6;
+}
+
+.main-content .about .about-container .about-content .about-grid .languages-container .languages .languages-dot {
+    height: 15px;
+    width: 15px;
+    background-color: #B63E48;
+    border-radius: 50%;
+    position: relative;
+}
+
+.main-content .about .about-container .about-content .about-grid .languages-container .languages {
+    font-size: 18px;
+}
+
+.main-content .about .about-container .about-content .about-grid .languages-container .languages .distinct {
+    font-weight: bold;
+    padding-top: 10px;
 }
 
 .main-content .about .about-container button {
     font-size: 16px;
     border-radius: 20px;
-    background-color: hsl(95, 21%, 45%);
+    background-color: #6f8b5b;
     color: white;
     border: 0;
     padding: 18px 32px;
@@ -586,7 +638,7 @@ main .main-content {
     display: block;
     width: 100px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-bottom: 5px;
 }
 
@@ -594,7 +646,7 @@ main .main-content {
     display: block;
     width: 50px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-top: 5px;
 }
 
@@ -676,7 +728,7 @@ main .main-content {
 }
 
 .main-content .skills .skills-container .skills-header-container {
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 .main-content .skills .skills-container .skills-header-container .skills-header {
@@ -687,7 +739,7 @@ main .main-content {
     display: block;
     width: 100px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-bottom: 5px;
 }
 
@@ -695,30 +747,22 @@ main .main-content {
     display: block;
     width: 50px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-top: 5px;
 }
 
 .main-content .skills .skills-container .skills-content {
     display: flex;
-	flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-}
-
-.main-content .skills .skills-container .skills-content .first-part-skills {
-    display: flex;
 	flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements {
     display: grid;
     grid-template-columns: repeat(2, 240px);
-    grid-template-rows: repeat(2, 220px);
+    grid-template-rows: repeat(2, 240px);
     padding: 0;
     justify-items: center;
     align-items: center;
@@ -732,13 +776,14 @@ main .main-content {
     font-size: 1.5em;
     border: 1px solid #B63E48;
     border-radius: 20px;
-    width: 150px;
-    height: 180px;
+    width: 170px;
+    height: 200px;
     box-shadow: 0 0 10px 5px #d9d3d3d6;
+    /*background-color: #EFD1D4;*/
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements li:hover {
-    background-color: #EFD1D4;
+    background-color: #6f8b5b3d;
     transition: 0.1s;
 }
 
@@ -760,8 +805,8 @@ main .main-content {
     width: 13px;
     height: 2px;
     background-color: #B63E48;
-    top: -5px;
-    left: 63px;
+    top: -2px;
+    left: 65px;
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-left {
@@ -770,8 +815,8 @@ main .main-content {
     width: 10px;
     height: 2px;
     background-color: #B63E48;
-    top: -2px;
-    left: 56px;
+    top: 1px;
+    left: 58px;
     transform: rotate(135deg);
 }
 
@@ -781,31 +826,9 @@ main .main-content {
     width: 10px;
     height: 2px;
     background-color: #B63E48;
-    top: -8px;
-    left: 46px;
+    top: -5px;
+    left: 48px;
     transform: rotate(-135deg);
-}
-
-.main-content .skills .skills-container .skills-content .second-part-skills {
-    display: flex;
-	flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    padding-top: 100px;
-}
-
-.main-content .skills .skills-container .skills-content .second-part-skills h2 {
-    color: #B63E48;
-    text-transform: uppercase;
-}
-
-.main-content .skills .skills-container .skills-content .second-part-skills .languages-container {
-    
-}
-
-.main-content .skills .skills-container .skills-content .second-part-skills .soft-skills-container {
-    
 }
 
 .main-content .projects .projects-container {
@@ -829,7 +852,7 @@ main .main-content {
     display: block;
     width: 100px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-bottom: 5px;
 }
 
@@ -837,7 +860,7 @@ main .main-content {
     display: block;
     width: 50px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-top: 5px;
 }
 
@@ -945,7 +968,7 @@ main .main-content {
     width: 300px;
     height: 400px;
     padding: 1em;
-    margin: 0 30px;
+    margin: 0 50px;
     border-radius: 20px;
     background: linear-gradient(135deg, rgba(224,164,169,1) 0%, rgba(239,209,212,1) 75%);
     box-shadow: 0 0 10px 5px #d9d3d3d6;
@@ -971,7 +994,7 @@ main .main-content {
     display: block;
     width: 100px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-bottom: 5px;
 }
 
@@ -979,7 +1002,7 @@ main .main-content {
     display: block;
     width: 50px;
     height: 3px;
-    background-color: #B63E48;
+    background-color: #6f8b5b;
     margin-top: 5px;
 }
 
@@ -1048,7 +1071,6 @@ main .main-content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
 }
 
 .main-content .contact .contact-container .other-ways-contact .header-other-ways {
@@ -1077,21 +1099,30 @@ main .main-content {
 
 footer .footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
    /* background-color: rgba(247, 247, 247); */
 }
 
-.footer ul {
+.footer .made-by {
     list-style: none;
     padding: 0;
+    position: relative;
+    bottom: -250px;
+    margin: 0;
+    z-index: 5;
 }
 
 .footer .footer-wave {
-    position: absolute;
+    position: relative;
+    background: url(photos/footer-wave.svg) no-repeat;
+    background-size: contain;
     width: 100%;
+    height: 319px;
     z-index: 0;
+    bottom: 0;
 }
 
 
