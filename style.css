@@ -30,15 +30,85 @@ body {
     margin: 0px;
 }
 
+.page-nav .nav-container .nav-mobile {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .page-nav .nav-container .nav-mobile .hamburger-icon-mobile {
     display: flex;
+    position: relative;
     flex-direction: column;
-    gap: 5px;
+    margin-left: 25px;
+    width: 40px;
+    height: fit-content;
+    top: 3px;
 }
-.page-nav .nav-container .nav-mobile .hamburger-icon-mobile span{ 
-    height: 4px;
-    width: 12.5px;
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile:hover {
+    cursor: pointer;
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile span { 
+    height: 6px;
+    width: 20px;
     background-color: #B63E48;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile span:nth-child(even) {
+    position: relative;
+    left: 50%;
+    top: -6px;
+    border-radius: 0 15px 15px 0;
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile span:nth-child(odd) {
+    position: relative;
+    left: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(1),.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(6) {
+  transform: rotate(45deg);
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(2),.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(5) {
+  transform: rotate(-45deg);
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+
+.page-nav .nav-container .nav-mobile .hamburger-icon-mobile.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
 }
 
 .page-nav .nav-container .header-nav {
@@ -190,22 +260,28 @@ body {
 .page-nav .nav-container .right-icons .theme-icon .sun-icon-white {
     opacity: 0;
     position: relative;
-    right: 0;
+    right: 13px;
     bottom: 0;
     transition: opacity .01s;
+}
+
+.page-nav .nav-container .right-icons .theme-icon .sun-icon-black {
+    position: relative;
+    left: 12px;
+    bottom: 0;
 }
 
 .page-nav .nav-container .right-icons .settings-icon .settings-icon-white {
     opacity: 0;
     position: relative;
-    right: 0;
+    right: 11px;
     bottom: 0;
     transition: opacity .01s;
 }
 
 .page-nav .nav-container .right-icons .settings-icon .settings-icon-black {
     position: relative;
-    right: 0;
+    left: 9px;
     bottom: 0;
 }
 .page-nav .nav-container .right-icons .theme-icon:hover .sun-icon-black, .page-nav .nav-container .right-icons .settings-icon:hover .settings-icon-black {
@@ -520,7 +596,7 @@ main .main-content {
 .main-content .about .about-container .about-content .about-grid .about-elements-grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(calc(100% - 100px), 330px));
-    grid-template-rows: repeat(4, 50px);
+    grid-template-rows: repeat(4, fit-content);
     column-gap: 40px;
     list-style: none;
     margin: 0 50px;
@@ -867,7 +943,7 @@ main .main-content {
     margin-top: 5px;
 }
 
-.main-content .projects .projects-container .projects-content .button-left, .main-content .projects .projects-container .projects-content .button-right {
+.main-content .projects .projects-container .projects-content .button-left {
     position: relative;
     display: inline-block;
     height: 70px;
@@ -879,16 +955,23 @@ main .main-content {
 }
 
 .main-content .projects .projects-container .projects-content .button-right {
-    left: 1065px;
+    position: relative;
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    top: 175px;
+    border-radius: 50%;
+    background-color: #708d5b52;
+    left: 1180px;
 }
 
-/*.main-content .projects .projects-container .projects-content .button-left:hover, .main-content .projects .projects-container .projects-content .button-right:hover {
+.main-content .projects .projects-container .projects-content .button-left:hover, .main-content .projects .projects-container .projects-content .button-right:hover {
     background-color: #efd1d4ab;
     height: 80px;
     width: 80px;
     transition: 0.5s;
 }
-*/
+
 .main-content .projects .projects-container .projects-content .button-right .arrow-top, .main-content .projects .projects-container .projects-content .button-right .arrow-bottom {
     display: inline-block;
     position: relative;
@@ -907,7 +990,7 @@ main .main-content {
     left: -5px;
     background-color: rgba(0, 0, 0, 0.466);
 }
-/*
+
 .main-content .projects .projects-container .projects-content .button-right:hover .arrow-top {
     transition: 0.5s;
     top: 15px;
@@ -921,7 +1004,7 @@ main .main-content {
     left: 0px;
     background-color: rgb(0, 0, 0);
 }
-*/
+
 .main-content .projects .projects-container .projects-content .button-left .arrow-top, .main-content .projects .projects-container .projects-content .button-left .arrow-bottom {
     display: inline-block;
     position: relative;
@@ -940,7 +1023,7 @@ main .main-content {
     left: -10px;
     background-color: rgba(0, 0, 0, 0.466);
 }
-/*
+
 .main-content .projects .projects-container .projects-content .button-left:hover .arrow-top {
     transition: 0.5s;
     top: 15px;
@@ -954,7 +1037,7 @@ main .main-content {
     left: -5px;
     background-color: rgb(0, 0, 0);
 }
-*/
+
 .main-content .projects .projects-container .projects-content .projects-elements {
     display: flex;
     flex-direction: row;
@@ -1270,6 +1353,7 @@ footer .footer {
     }
     
     .main-content .about .about-container .about-content .about-grid .languages-container {
+        position: relative;
         top: 80px;
     }
 
