@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oliwia Gowor</title>
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+    <link rel="stylesheet" class="colorStylesheetLink" href="css/colors/pink.css">
+    <link rel="stylesheet" class="themeStylesheetLink" href="css/themes/light.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,12 +16,12 @@
         <div class="nav-container">   
             <div class="nav-mobile">
                 <div class="hamburger-icon-mobile">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span class="hamburger-icon-mobile-element"></span>
+                    <span class="hamburger-icon-mobile-element"></span>
+                    <span class="hamburger-icon-mobile-element"></span>
+                    <span class="hamburger-icon-mobile-element"></span>
+                    <span class="hamburger-icon-mobile-element"></span>
+                    <span class="hamburger-icon-mobile-element"></span>
                 </div>
             </div>
             <div class="header-nav">
@@ -44,19 +45,21 @@
             <div class="navbar-space"></div>
             <div class="right-icons">
                 <div class="theme-icon">
-                    <a href=""><img src="icons/sun-icon-black.png" class="sun-icon-black" width="25px" height="25px"></a>
-                    <a href=""><img src="icons/sun-icon-white.png" class="sun-icon-white" width="25px" height="25px"></a>
+                    <button class="theme-button"><img src="icons/sun-icon-black.png" class="sun-icon" id="sun-icon-black" width="25px" height="25px">
+                    <img src="icons/sun-icon-white.png" class="sun-icon" id="sun-icon-white" width="25px" height="25px"></button> 
                 </div>
                 <div class="settings-icon">
-                    <a href=""><img src="icons/settings-icon-black.png" class="settings-icon-black" width="20px" height="20px"></a>
-                    <a href=""><img src="icons/settings-icon-white.png" class="settings-icon-white" width="20px" height="20px"></a>
-                    <div class="settings-dropdown">
-                        <h1 class="settings-header">Theme color</h1>
-                        <ul class="color-circle-elements">
-                            <li><a href=""><div class="color-circle-pink"></div></a></li>
-                            <li><a href=""><div class="color-circle-green"></div></a></li>
-                            <li><a href=""><div class="color-circle-blue"></div></a></li>
-                        </ul>
+                    <div class="settings-icon-box">
+                        <img src="icons/settings-icon-black.png" class="settings-icon-black" width="20px" height="20px">
+                        <img src="icons/settings-icon-white.png" class="settings-icon-white" width="20px" height="20px">
+                        <div class="settings-dropdown">
+                            <h1 class="settings-header">Theme color</h1>
+                            <ul class="color-circle-elements">
+                                <li class="color-circle" onclick="activateColor('pink')"><div class="color-circle-pink" ></div></li>
+                                <li class="color-circle" onclick="activateColor('green')"><div class="color-circle-green"></div></li>
+                                <li class="color-circle" onclick="activateColor('blue')"><div class="color-circle-blue"></div></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -308,5 +311,6 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="script.js"></script> 
 </body>
 </html>
