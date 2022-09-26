@@ -1,8 +1,11 @@
 :root {
     --main-color: #68623B;
-    --main-color-light: #C4BD97;
+    --main-color-light: #c4bd97;
     --main-color-gradient: #b8ab63;
     --accent-color: #FA8A5A;
     --accent-color-light: #fa8a5a38;
 } 
  
+.main-content .home .home-background {
+    background: url(/OliwiaGowor/CurriculumVitae/photos/home-background-green.png) no-repeat;
+}

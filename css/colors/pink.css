@@ -5,3 +5,7 @@
     --accent-color: #6f8b5b;
     --accent-color-light: #708d5b38;
 } 
+
+.main-content .home .home-background {
+    background: url(/OliwiaGowor/CurriculumVitae/photos/home-background-pink.png) no-repeat;
+}

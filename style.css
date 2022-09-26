@@ -124,41 +124,51 @@ body textarea:focus {
     display: none;
 }
 
-/*
-.page-nav .nav-container .header-nav ul.nav-elements {
+.page-nav .nav-container .header-nav.open {
+    display: inline-flex;
+    position: fixed;
+    top: 60px;
+    background-color: var(--primary-background-color);
+    width: 50%;
+    justify-content: center;
+    padding: 2px 0px;
+    box-shadow: 0 5px 5px var(--shadow-color);
+}
+
+.page-nav .nav-container .header-nav.open ul.nav-elements {
     list-style: none;
     text-align: center;
     display: inline-flex;
-    gap: 1em;
+    flex-direction: column;
+    width: 100%;
     margin: 0;
     padding: 0; 
 }
 
-.page-nav .nav-container .header-nav .nav-elements li {
+.page-nav .nav-container .header-nav.open .nav-elements li {
     display: inline-flex;
     align-items: center;
     justify-content: center;   
-    height: 60px;
-    min-width: 100px;
-    width: 110px;
-    border-radius: 10%; 
-    flex: 0 1 110px;
     flex-wrap: wrap;
+    padding: 20px 0px 5px 0px;
+    font-size: 20px;
+    border-top: 1px solid var(--main-color-light);
+    width: 100%;
 }
 
-.page-nav .nav-container .header-nav .nav-elements li:hover a{
+.page-nav .nav-container .header-nav.open .nav-elements li:hover a{
     color:var(--main-color);
     transition: 0.1s;
 }
 
-.page-nav .nav-container .header-nav .nav-elements a {
+.page-nav .nav-container .header-nav.open .nav-elements a {
     color: var(--primary-text-color);
     text-decoration: none;
 }
-.page-nav .nav-container .header-nav .nav-elements a:visited {
+.page-nav .nav-container .header-nav.open .nav-elements a:visited {
     color: var(--primary-text-color);
 }
-*/
+
 /*
 .page-nav .nav-container .header-nav .dropdown-arrow {
     height: 0;
@@ -436,10 +446,8 @@ main .main-content {
     width: 120%;
     height: 950px;
     top: 0;
-    background: url(photos/home-background.png) no-repeat;
     background-size: 120% 600px;
     z-index: 0;
-
 }
 
 .main-content .home .home-blob {
@@ -868,13 +876,15 @@ main .main-content {
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements {
-    display: grid;
-    grid-template-columns: repeat(2, 180px);
-    grid-template-rows: repeat(2, 240px);
+    display: flex;
+    justify-content: center;
     padding: 0;
-    justify-items: center;
     align-items: center;
     margin: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5%;
+
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements li {
@@ -888,7 +898,8 @@ main .main-content {
     width: 140px;
     height: 170px;
     box-shadow: 0 0 10px 5px var(--shadow-color);
-    /*background-color: var(--main-color-light);*/
+    /*background-color: var(--main-color-light);*/    
+    margin: 50px 0px 0px 0px;
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements li:hover {
@@ -980,25 +991,25 @@ main .main-content {
 
 .main-content .projects .projects-container .projects-content .slide-buttons {
      position: relative;
-     bottom: 200px;
+     bottom: 250px;
 }
 
 .main-content .projects .projects-container .projects-content .slide-buttons div {
     position: relative;
     display: inline-block;
-    height: 70px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     background-color: var(--accent-color);
     opacity: 0.5;
 }
 
 .main-content .projects .projects-container .projects-content .slide-buttons .button-left {
-    right: 200px;
+    right: 100px;
 }
 
 .main-content .projects .projects-container .projects-content .slide-buttons .button-right {
-    left: 200px;
+    left: 100px;
 }
 
 .main-content .projects .projects-container .projects-content .button-left:hover, .main-content .projects .projects-container .projects-content .button-right:hover {
@@ -1006,42 +1017,37 @@ main .main-content {
     transition: 0.5s;
 }
 
-.main-content .projects .projects-container .projects-content .button-right .arrow-top, .main-content .projects .projects-container .projects-content .button-right .arrow-bottom {
+.main-content .projects .projects-container .projects-content .slide-buttons span {
     display: inline-block;
     position: relative;
     height: 4px;
-    width: 30px;
+    width: 25px;
     background-color: rgba(0, 0, 0);
-    transform: rotate(45deg);
-    top: 10px;
-    left: 25px;
     border-radius: 20px;
+}
+
+.main-content .projects .projects-container .projects-content .button-right .arrow-top, .main-content .projects .projects-container .projects-content .button-right .arrow-bottom {
+    transform: rotate(45deg);
+    top: 7px;
+    left: 20px;
 }
 
 .main-content .projects .projects-container .projects-content .button-right .arrow-bottom {
     transform: rotate(-45deg);
-    top: 30px;
+    top: 22px;
     left: -5px;
-    background-color: rgba(0, 0, 0);
 }
 
 .main-content .projects .projects-container .projects-content .button-left .arrow-top, .main-content .projects .projects-container .projects-content .button-left .arrow-bottom {
-    display: inline-block;
-    position: relative;
-    height: 4px;
-    width: 30px;
-    background-color: rgba(0, 0, 0);
     transform: rotate(-45deg);
-    top: 10px;
-    left: 20px;
-    border-radius: 20px;
+    top: 7px;
+    left: 15px;
 }
 
 .main-content .projects .projects-container .projects-content .button-left .arrow-bottom {
     transform: rotate(45deg);
-    top: 30px;
+    top: 22px;
     left: -10px;
-    background-color: rgba(0, 0, 0);
 }
 
 .main-content .projects .projects-container .projects-content .projects-elements {
@@ -1059,8 +1065,8 @@ main .main-content {
 .main-content .projects .projects-container .projects-content .projects-elements .project-element {
     position: absolute;
     top: 30px;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     padding: 1em;
     margin: 0 50px;
     border-radius: 20px;
@@ -1069,7 +1075,7 @@ main .main-content {
 }
 
 .main-content .projects .projects-container .projects-content .projects-elements .project-element.left {
-    transform: translate(-400px, 25px);  
+    transform: translate(-300px, 25px);  
     opacity: 0.4;
     transition: 1s;
 }
@@ -1078,22 +1084,14 @@ main .main-content {
     transform: translate(0px, 0px);  
     opacity: 1;
     transition: 1s;
-    height: 450px;
-    width: 350px;
+    height: 350px;
+    width: 250px;
 }
 
 .main-content .projects .projects-container .projects-content .projects-elements .project-element.right {
-    transform: translate(400px, 25px);  
+    transform: translate(300px, 25px);  
     opacity: 0.4;
     transition: 1s;
-}
-
-.main-content .projects .projects-container .projects-content .projects-elements .project-element.right {
-    transform: translate(400px, 25px);  
-    opacity: 0.4;
-    transition: 1s;
-    height: 400px;
-    width: 300px;
 }
 
 .main-content .contact .contact-container
@@ -1276,8 +1274,7 @@ footer .footer {
     bottom: 0;
 }
 
-@media screen and (min-width: 600px) {
-
+@media screen and (min-width: 1062px) {
     .page-nav .nav-container .nav-mobile .hamburger-icon-mobile {
         display: none;
     }
@@ -1322,6 +1319,40 @@ footer .footer {
         color: var(--primary-text-color);
     }
 
+    .main-content .skills .skills-container .skills-header-container {
+        padding-bottom: 20px;
+    }
+
+    .main-content .skills .skills-container .skills-content .skills-photo {
+        display: none;
+    }
+
+    .main-content .skills .skills-container .skills-content .skills-elements {
+    }
+
+    .main-content .skills .skills-container .skills-content .skills-elements li {
+        width: 170px;
+        height: 200px;
+    }
+    
+    .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-line {
+        top: -2px;
+        left: 65px;
+    }
+    
+    .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-left {
+        top: 1px;
+        left: 58px;
+    }
+    
+    .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-right {
+        top: -5px;
+        left: 48px;
+    }
+}
+
+@media screen and (min-width: 678px) {
+    
     .main-content .home .home-background {
         background-size: 1920px 900px;
         width: 100%;
@@ -1418,38 +1449,66 @@ footer .footer {
         height: 150px;
     }
 
-    .main-content .skills .skills-container .skills-header-container {
-        padding-bottom: 20px;
+    .main-content .projects .projects-container .projects-content .slide-buttons {
+        position: relative;
+        bottom: 200px;
+   }
+
+   .main-content .projects .projects-container .projects-content .slide-buttons div {
+    height: 70px;
+    width: 70px;
     }
 
-    .main-content .skills .skills-container .skills-content .skills-photo {
-        display: inline-block;
-    }
-
-    .main-content .skills .skills-container .skills-content .skills-elements {
-        grid-template-columns: repeat(2, 240px);
-    }
-
-    .main-content .skills .skills-container .skills-content .skills-elements li {
-        width: 170px;
-        height: 200px;
+    .main-content .projects .projects-container .projects-content .slide-buttons .button-left {
+        right: 200px;
     }
     
-    .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-line {
-        top: -2px;
-        left: 65px;
-    }
-    
-    .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-left {
-        top: 1px;
-        left: 58px;
-    }
-    
-    .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-right {
-        top: -5px;
-        left: 48px;
+    .main-content .projects .projects-container .projects-content .slide-buttons .button-right {
+        left: 200px;
     }
 
+    .main-content .projects .projects-container .projects-content .slide-buttons span {
+        width: 30px;
+    }
+    
+    .main-content .projects .projects-container .projects-content .button-right .arrow-top, .main-content .projects .projects-container .projects-content .button-right .arrow-bottom {
+        top: 10px;
+        left: 25px;
+    }
+    
+    .main-content .projects .projects-container .projects-content .button-right .arrow-bottom {
+        top: 30px;
+        left: -5px;
+    }
+    
+    .main-content .projects .projects-container .projects-content .button-left .arrow-top, .main-content .projects .projects-container .projects-content .button-left .arrow-bottom {
+        top: 10px;
+        left: 20px;
+    }
+    
+    .main-content .projects .projects-container .projects-content .button-left .arrow-bottom {
+        top: 30px;
+        left: -10px;
+    }
+
+    .main-content .projects .projects-container .projects-content .projects-elements .project-element {
+        width: 300px;
+        height: 400px;
+    }
+    
+    .main-content .projects .projects-container .projects-content .projects-elements .project-element.left {
+        transform: translate(-400px, 25px);  
+    }
+    
+    .main-content .projects .projects-container .projects-content .projects-elements .project-element.middle {
+            height: 450px;
+            width: 350px;
+        }
+    
+    .main-content .projects .projects-container .projects-content .projects-elements .project-element.right {
+        transform: translate(400px, 25px);  
+    }
+    
     .main-content .contact .contact-container .contact-form {
         width: 1000px;
         max-width: calc(100% - 200px);

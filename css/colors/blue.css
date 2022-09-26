@@ -6,3 +6,6 @@
     --accent-color-light: #ccabd838;
 } 
  
+.main-content .home .home-background {
+    background: url(/OliwiaGowor/CurriculumVitae/photos/home-background-blue.png) no-repeat;
+}

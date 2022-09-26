@@ -3,7 +3,17 @@
 //hamburger icon opening
 document.querySelector('.hamburger-icon-mobile').addEventListener('click', function() {
 	this.classList.toggle('open');
+	document.querySelector('.header-nav').classList.toggle('open');
 });
+
+var navElements = document.querySelectorAll('.nav-element');
+for (i = 0; i < navElements.length; i++) {
+	navElements[i].addEventListener('click', function() {
+	document.querySelector('.hamburger-icon-mobile').classList.toggle('open');
+	document.querySelector('.header-nav').classList.toggle('open');
+	});
+}
+
 
 //website color changing
 const colorSelect = document.querySelector('.color-circle');
