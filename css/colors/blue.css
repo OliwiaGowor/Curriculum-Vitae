@@ -2,10 +2,10 @@
     --main-color: #055b5c;
     --main-color-light: #c5fbfc;
     --main-color-gradient: #7ffafc;
-    --accent-color: #CCABD8;
+    --accent-color: #B57BCC;
     --accent-color-light: #ccabd838;
 } 
  
 .main-content .home .home-background {
-    background: url(/OliwiaGowor/CurriculumVitae/photos/home-background-blue.png) no-repeat;
+    background: url(/CurriculumVitae/photos/home-background-blue.png) no-repeat;
 }

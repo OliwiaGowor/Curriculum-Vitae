@@ -124,7 +124,7 @@ body textarea:focus {
     display: none;
 }
 
-.page-nav .nav-container .header-nav.open {
+.page-nav .nav-container .header-nav.open.mobile {
     display: inline-flex;
     position: fixed;
     top: 60px;
@@ -341,13 +341,13 @@ body textarea:focus {
     right: 2em;
     width: 100px;  
     height: auto;
-    background-color: white;
+    background-color: var(--primary-background-color);
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s;
     color: black;
     box-shadow: 0 5px 5px var(--shadow-color);
-    border: 1px solid #e1e1e1;
+    border: 1px solid var(--shadow-color);
     z-index: 99;
 }
 
@@ -440,16 +440,6 @@ main .main-content {
     /*background-color: rgba(247, 247, 247);*/
 }
 
-.main-content .home .home-background {
-    position: absolute;
-    opacity: 70%;
-    width: 120%;
-    height: 950px;
-    top: 0;
-    background-size: 120% 600px;
-    z-index: 0;
-}
-
 .main-content .home .home-blob {
     display: none;
 }
@@ -457,17 +447,34 @@ main .main-content {
 .main-content .home .home-container {
     padding-top: 80px;
     padding-bottom: 150px;
+    margin-bottom: 20px;
     position: relative;
 }
 
-.main-content .home .home-container .home-header {
+.main-content .home .home-container .home-background {
+    position: absolute;
+    opacity: 70%;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    background-size: 120% 100%;
+    z-index: 0;
+}
+
+.main-content .home .home-container .home-front-elements {
+    position: relative;
+    z-index: 2;
+}
+
+.main-content .home .home-container .home-front-elements .home-header {
     font-size: 40px;
     height: auto;
     margin-left: 10%;
     margin-right: 10%;
+    z-index: 10;
 }
 
-.main-content .home .home-container .home-header .name {
+.main-content .home .home-container .home-front-elements .home-header .name {
     display: inline;
     color: var(--main-color);
 }
@@ -478,7 +485,7 @@ main .main-content {
     background-color: rgb(0, 0, 0);
 }*/
 
-.main-content .home .home-container .introduction {
+.main-content .home .home-container .home-front-elements .introduction {
     font-size: 20px;
     line-height: 1.3em;
     color: black;
@@ -487,22 +494,22 @@ main .main-content {
     padding: 0;
 }
 
-.main-content .home .home-container .introduction .introduction-text {
+.main-content .home .home-container .home-front-elements .introduction .introduction-text {
     display: inline;
 }
 
-.main-content .home .home-container .introduction .distinct {
+.main-content .home .home-container .home-front-elements .introduction .distinct {
     display: inline;
     color: var(--main-color);
     font-weight: bold;
 }
 
-.main-content .home .home-container .home-contact {
+.main-content .home .home-container .home-front-elements .home-contact {
     margin-left: 10%;
     margin-top: 50px;
 }
 
-.main-content .home .home-container .home-contact .contact-elements {
+.main-content .home .home-container .home-front-elements .home-contact .contact-elements {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(1, 320px);
@@ -510,30 +517,30 @@ main .main-content {
     padding: 0;
 }
 
-.main-content .home .home-container .home-contact .contact-elements .contact-element .distinct {
+.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element .distinct {
     font-weight: bold;
 }
 
-.main-content .home .home-container .home-contact .contact-elements .contact-element a {
+.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element a {
     color: black;
     text-decoration: none;
     display: inline;
     margin-right: 10px;
 }
 
-.main-content .home .home-container .home-contact .contact-elements .contact-element a:hover {
+.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element a:hover {
     color: var(--main-color);
 }
 
-.main-content .home .home-container .home-contact .contact-elements .contact-element .copy {
+.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element .copy {
     display: inline;
 }
 
-.main-content .home .home-container .home-contact .contact-elements .contact-element .copy:hover {
+.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element .copy:hover {
 	cursor: pointer;
 }
 
-.main-content .home .home-container .button-more-about-me {
+.main-content .home .home-container .home-front-elements .button-more-about-me {
     font-size: 16px;
     border-radius: 20px;
     background-color: var(--accent-color);
@@ -543,7 +550,7 @@ main .main-content {
     margin-left: 10%;
 }
 
-.main-content .home .home-container .button-more-about-me:active {
+.main-content .home .home-container .home-front-elements .button-more-about-me:active {
     background-color: var(--main-color-light);
     color: var(--main-color);
 }
@@ -1319,6 +1326,16 @@ footer .footer {
         color: var(--primary-text-color);
     }
 
+    .main-content .home .home-background .home-container {
+        background-size: 1920px 900px;
+        width: 100%;
+    }
+
+    .main-content .home .home-container {
+        padding-top: 180px;
+        padding-bottom: 350px;
+    }
+
     .main-content .skills .skills-container .skills-header-container {
         padding-bottom: 20px;
     }
@@ -1352,53 +1369,43 @@ footer .footer {
 }
 
 @media screen and (min-width: 678px) {
-    
-    .main-content .home .home-background {
-        background-size: 1920px 900px;
-        width: 100%;
-    }
-    
-    .main-content .home .home-blob {
+     
+    .main-content .home .home-container .home-front-elements .home-blob {
         display: inline-block;
         position: absolute;
         width: 1000px;
         height: 600px;
-        top: 120px;
+        top: -60px;
         left: 60%;
         background: url(photos/blob-home.svg) no-repeat;
         background-size: contain;
         z-index: 3;
     }
 
-    .main-content .home .home-container {
-        padding-top: 180px;
-        padding-bottom: 350px;
-    }
-
-    .main-content .home .home-container .home-header {
+    .main-content .home .home-container .home-front-elements .home-header {
         font-size: 45px;
         height: auto;
         margin-left: 15%;
         margin-right: 45%;
     }
 
-    .main-content .home .home-container .introduction {
+    .main-content .home .home-container .home-front-elements .introduction {
         margin-left: 15%;
         margin-right: 45%;
         padding-top: 20px;
     }
 
-    .main-content .home .home-container .home-contact {
+    .main-content .home .home-container .home-front-elements .home-contact {
         margin-left: 15%;
         margin-top: 50px;
     }
 
-    .main-content .home .home-container .home-contact .contact-elements {
+    .main-content .home .home-container .home-front-elements .home-contact .contact-elements {
         grid-template-columns: repeat(2, 320px);
         grid-template-rows: repeat(1, 90px);
     }    
 
-    .main-content .home .home-container .button-more-about-me {
+    .main-content .home .home-container .home-front-elements .button-more-about-me {
         margin-left: 15%;
     }
 

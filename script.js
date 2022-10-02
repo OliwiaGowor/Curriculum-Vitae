@@ -4,13 +4,15 @@
 document.querySelector('.hamburger-icon-mobile').addEventListener('click', function() {
 	this.classList.toggle('open');
 	document.querySelector('.header-nav').classList.toggle('open');
+	document.querySelector('.header-nav').classList.toggle('mobile');
 });
 
 var navElements = document.querySelectorAll('.nav-element');
 for (i = 0; i < navElements.length; i++) {
 	navElements[i].addEventListener('click', function() {
 	document.querySelector('.hamburger-icon-mobile').classList.toggle('open');
-	document.querySelector('.header-nav').classList.toggle('open');
+	document.querySelector('.header-nav').classList.remove('open');
+	document.querySelector('.header-nav').classList.remove('mobile');
 	});
 }
 
