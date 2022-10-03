@@ -1,5 +1,3 @@
-
-
 //hamburger icon opening
 document.querySelector('.hamburger-icon-mobile').addEventListener('click', function() {
 	this.classList.toggle('open');

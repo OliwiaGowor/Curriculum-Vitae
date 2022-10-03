@@ -5,6 +5,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
+    overflow: hidden scroll;
 }
 
 body input:focus {
@@ -590,22 +591,21 @@ main .main-content {
     margin-top: 5px;
 }
 
+.main-content .about .about-container .second-blob {
+    position: absolute;
+    height: 600px;
+    width: 905px;
+    left: 0;
+    background-size: contain;
+    z-index: 0;
+}
+
 .main-content .about .about-container .about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 100px;
-}
-
-.main-content .about .about-container .about-content .languages-blob {
-    position: absolute;
-    height: 700px;
-    width: 1200px;
-    left: 0;
-    /*background: url(photos/languages-blob.svg) no-repeat;*/
-    background-size: contain;
-    z-index: 0;
 }
 
 .main-content .about .about-container .about-content .about-text-container {
@@ -1146,7 +1146,6 @@ main .main-content {
 .main-content .contact .contact-container .contact-form {
     width: 1000px;
     max-width: calc(100% - 100px);
-
 }
 
 .main-content .contact .contact-container .contact-form .form-header {
@@ -1377,7 +1376,6 @@ footer .footer {
         height: 600px;
         top: -60px;
         left: 60%;
-        background: url(photos/blob-home.svg) no-repeat;
         background-size: contain;
         z-index: 3;
     }
@@ -1445,6 +1443,8 @@ footer .footer {
 
     .main-content .education .education-content .education-image {
         display: inline;
+        height: 417px;
+        width: 441px;
     }
 
     .main-content .education .education-content .education-elements {
@@ -1546,6 +1546,15 @@ footer .footer {
     .main-content .contact .contact-container .other-ways-contact .contact-elements {
         flex-direction: row;
         gap: 100px;
+    }
+
+    .main-content .last-blob {
+        position: absolute;
+        top: 3800px;
+        left: 100px;
+        height: 541px;
+        width: 600px;
+        z-index: 0;
     }
 
     .footer .footer-wave {

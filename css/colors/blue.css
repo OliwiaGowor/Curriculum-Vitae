@@ -7,5 +7,13 @@
 } 
  
 .main-content .home .home-background {
-    background: url(/CurriculumVitae/photos/home-background-blue.png) no-repeat;
+    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/home-background-blue.png) no-repeat;
+}
+
+.main-content .home .home-container .home-front-elements .home-blob {
+    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/home-blob-blue.svg) no-repeat;
+}
+
+.main-content .education .education-container .education-content .education-image {
+    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/education-blue.svg) no-repeat;
 }
