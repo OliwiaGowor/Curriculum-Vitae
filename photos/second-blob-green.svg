@@ -5,7 +5,7 @@
    width="905"
    height="599.75061"
    version="1.1"
-   sodipodi:docname="second-blob-pink.svg"
+   sodipodi:docname="second-blob-green.svg"
    inkscape:version="1.2.1 (9c6d41e, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,8 +23,8 @@
      inkscape:deskcolor="#505050"
      showgrid="false"
      inkscape:zoom="0.68611852"
-     inkscape:cx="319.91557"
-     inkscape:cy="287.12241"
+     inkscape:cx="179.99806"
+     inkscape:cy="298.7822"
      inkscape:window-width="1920"
      inkscape:window-height="1003"
      inkscape:window-x="0"
@@ -36,11 +36,11 @@
     <linearGradient
        id="linearGradient10887">
       <stop
-         style="stop-color:#afcb9f;stop-opacity:1;"
+         style="stop-color:#fdb99c;stop-opacity:1;"
          offset="0"
          id="stop10883" />
       <stop
-         style="stop-color:#c1d6b1;stop-opacity:1;"
+         style="stop-color:#fdcbb5;stop-opacity:1;"
          offset="1"
          id="stop10885" />
     </linearGradient>

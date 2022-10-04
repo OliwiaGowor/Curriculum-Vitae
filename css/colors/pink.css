@@ -3,21 +3,29 @@
     --main-color-light: #EFD1D4;
     --main-color-gradient: #e0a4a9;
     --accent-color: #6f8b5b;
-    --accent-color-light: #708d5b38;
+    --accent-color-light: #c1d6b1;
 } 
 
 .main-content .home .home-background {
-    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/home-background-pink.png) no-repeat;
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/home-background-pink.svg) no-repeat;
 }
 
 .main-content .home .home-container .home-front-elements .home-blob {
-    background: url(/https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/home-blob-pink.svg) no-repeat;
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/home-blob-pink.svg) no-repeat;
 }
 
 .main-content .about .about-container .second-blob {
-    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/second-blob-pink.svg) no-repeat;
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/second-blob-pink.svg) no-repeat;
 }
 
 .main-content .education .education-container .education-content .education-image {
-    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/education-pink.svg) no-repeat;
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/education-pink.svg) no-repeat;
+}
+
+.main-content .skills .skills-container .third-blob { 
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/third-blob-pink.svg) no-repeat;
+}
+
+.footer .footer-wave { 
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/footer-wave-pink.svg) no-repeat;
 }

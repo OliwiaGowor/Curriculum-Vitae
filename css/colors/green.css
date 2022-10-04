@@ -1,23 +1,31 @@
 :root {
-    --main-color: #535016;
-    --main-color-light: #EAE7AE;
-    --main-color-gradient: #D4CE5E;
-    --accent-color: #FA8A5A;
-    --accent-color-light: #fa8a5a38;
+    --main-color: #273B09;
+    --main-color-light: #C1CFA0;
+    --main-color-gradient: #90A955;
+    --accent-color: #FF7C44;
+    --accent-color-light: #fdcbb5;
 } 
  
 .main-content .home .home-background {
-    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/home-background-green.png) no-repeat;
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/home-background-green.svg) no-repeat;
 }
 
 .main-content .home .home-container .home-front-elements .home-blob {
-    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/home-blob-green.svg) no-repeat;
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/home-blob-green.svg) no-repeat;
+}
+
+.main-content .about .about-container .second-blob {
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/second-blob-green.svg) no-repeat;
 }
 
 .main-content .education .education-container .education-content .education-image {
-    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/education-green.svg) no-repeat;
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/education-green.svg) no-repeat;
 }
 
-/* .main-content .last-blob {
-    background: url(https://github.com/OliwiaGowor/Curriculum-Vitae/blob/main/photos/last-blob-green.svg) no-repeat;
-} */
+.main-content .skills .skills-container .third-blob { 
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/third-blob-green.svg) no-repeat;
+}
+
+.footer .footer-wave { 
+    background: url(https://raw.githubusercontent.com/OliwiaGowor/Curriculum-Vitae/47225bb8a3727c05d0aa5d5d08ec34c583d01d80/photos/footer-wave-green.svg) no-repeat;
+}

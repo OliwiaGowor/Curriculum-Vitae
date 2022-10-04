@@ -2,5 +2,9 @@
     --primary-background-color: rgb(65, 65, 65);
     --primary-text-color: #ffffff;
     --secondary-text-color: black;
-        --shadow-color: #686666d6;
+    --shadow-color: #686666d6;
 } 
+
+.main-content .contact .contact-container .other-ways-contact .contact-elements .linkedin-icon {
+    background: url(/home/oliwia/Pulpit/Strona/icons/linkedin-icon-white.png) no-repeat;
+}

@@ -1,5 +1,10 @@
 :root {
     --primary-background-color: #ffffff;
     --primary-text-color: black;
-        --shadow-color: #d9d3d3d6;
+    --secondary-text-color: black;
+    --shadow-color: #d9d3d3d6;
+}
+
+.main-content .contact .contact-container .other-ways-contact .contact-elements .linkedin-icon {
+    background: url(/home/oliwia/Pulpit/Strona/icons/linkedin-icon-black.png) no-repeat;
 }
