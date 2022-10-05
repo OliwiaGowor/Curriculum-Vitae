@@ -5,6 +5,38 @@
     --shadow-color: #d9d3d3d6;
 }
 
+.page-nav .nav-container .right-icons .theme-icon-container #theme-icon-white, .page-nav .nav-container .right-icons .settings-icon-container #settings-icon-white {
+    opacity: 0;
+}
+
+.page-nav .nav-container .right-icons .theme-icon-container #theme-icon-black, .page-nav .nav-container .right-icons .settings-icon-container #settings-icon-black {
+    opacity: 1;
+}
+
+.page-nav .nav-container .right-icons .theme-icon-container .theme-button:hover #theme-icon-black, .page-nav .nav-container .right-icons .settings-button:hover #settings-icon-black {
+    opacity: 0;
+}
+
+.page-nav .nav-container .right-icons .theme-icon-container .theme-button:hover #theme-icon-white, .page-nav .nav-container .right-icons .settings-button:hover #settings-icon-white {
+    opacity: 1;
+}
+
+.main-content .contact .contact-container .other-ways-contact .contact-elements .phone-icon {
+    background: url(../../icons/phone-icon-black.svg) no-repeat; 
+    background-size: contain;
+}
+
+.main-content .contact .contact-container .other-ways-contact .contact-elements .email-icon {
+    background: url(../../icons/email-icon-black.svg) no-repeat; 
+    background-size: contain;
+}
+
+.main-content .contact .contact-container .other-ways-contact .contact-elements .github-icon {
+    background: url(../../icons/github-icon-black.png) no-repeat; 
+    background-size: contain;
+}
+
 .main-content .contact .contact-container .other-ways-contact .contact-elements .linkedin-icon {
-    background: url(../../icons/linkedin-icon-black.png) no-repeat;
+    background: url(../../icons/linkedin-icon-black.svg) no-repeat; 
+    background-size: contain;
 }
