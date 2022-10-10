@@ -24,6 +24,7 @@ body textarea:focus {
     padding: 0px;
     z-index: 99;
     box-shadow: 0 5px 15px var(--shadow-color);
+    overflow: hidden;
 }
 
 .page-nav .nav-container {
@@ -172,7 +173,7 @@ body textarea:focus {
 .page-nav .nav-container .navbar-space {
     display: flex;
     height: auto;
-    width: 1000px;
+    width: 2000px;
     max-width: calc(65%);
 }
 
@@ -322,6 +323,7 @@ main {
     margin: 0px;
     padding-left: 0;
     padding-right: 0;
+    overflow-x: hidden;
 }
 
 main button:hover {
@@ -332,6 +334,7 @@ main .main-content {
     display: block;
     /*background-color: rgba(247, 247, 247);*/
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .main-content .home .home-blob {
@@ -424,16 +427,24 @@ main .main-content {
     margin-right: 10px;
 }
 
+.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element a .to-copy {
+    display: inline-block;
+}
+
 .main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element a:hover {
     color: var(--main-color);
 }
 
-.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element .copy {
+.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element .copy-button {
     display: inline;
+    background: none;
+    border: none;
+    padding: 5px 6px;
 }
 
-.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element .copy:hover {
-	cursor: pointer;
+.main-content .home .home-container .home-front-elements .home-contact .contact-elements .contact-element .copy-button:active {
+	background-color: var(--main-color);
+    border-radius: 20px;
 }
 
 .main-content .home .home-container .home-front-elements .button-more-about-me {
@@ -447,8 +458,8 @@ main .main-content {
 }
 
 .main-content .home .home-container .home-front-elements .button-more-about-me:active {
-    background-color: var(--main-color-light);
-    color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--main-color-light);
 }
 
 .main-content .about .about-container {
@@ -619,8 +630,8 @@ main .main-content {
 }
 
 .main-content .about .about-container button:active {
-    background-color: var(--main-color-light);
-    color: var(--main-color);
+    background-color: var(--main-color);
+    color: var(--main-color-light);
 }
 
 .main-content .about .about-container button img {
@@ -746,6 +757,8 @@ main .main-content {
     justify-content: center;
     align-items: center;
     margin-bottom: 180px;
+    width: 100%;
+    position: relative;
 }
 
 .main-content .skills .skills-container .third-blob {
@@ -1137,6 +1150,7 @@ main .main-content {
     align-items: center;
     justify-content: center;
     margin-bottom: 35px;
+    width: 80%;
 }
 
 .main-content .contact .contact-container .other-ways-contact .header-other-ways {
@@ -1152,6 +1166,7 @@ main .main-content {
     align-items: center;
     gap: 20px;
     padding-left: 0;
+    flex-wrap: wrap;
 }
 
 .main-content .contact .contact-container .other-ways-contact .contact-elements li a {
@@ -1251,6 +1266,13 @@ footer .footer {
         background-size: 100% 100%;
         width: 100%;
     }
+
+    .main-content .education .education-content .education-image {
+        display: inline;
+        height: 417px;
+        width: 441px;
+    }
+
     .main-content .skills .skills-container .skills-header-container {
         padding-bottom: 20px;
     }
@@ -1289,7 +1311,6 @@ footer .footer {
         height: 600px;
         top: -60px;
         left: 60%;
-        background-size: contain;
         z-index: 3;
     }
 
@@ -1361,12 +1382,6 @@ footer .footer {
         gap: 30px;
     }
 
-    .main-content .education .education-content .education-image {
-        display: inline;
-        height: 417px;
-        width: 441px;
-    }
-
     .main-content .education .education-content .education-elements {
         width: 540px;
         padding-right: 1em;
@@ -1382,9 +1397,8 @@ footer .footer {
         height: 756px;
         width: 801px;
         right: -150px;
-        background-size: contain;
         z-index: 0;
-        top: 2600px;
+        top: 50px;
     }    
 
     .main-content .projects .projects-container .projects-content .slide-buttons {

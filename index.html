@@ -49,9 +49,9 @@
                         <div class="settings-dropdown">
                             <h1 class="settings-header">Theme color</h1>
                             <ul class="color-circle-elements">
-                                <li class="color-circle" onclick="activateColor('pink')"><div class="color-circle-pink" ></div></li>
-                                <li class="color-circle" onclick="activateColor('green')"><div class="color-circle-green"></div></li>
-                                <li class="color-circle" onclick="activateColor('blue')"><div class="color-circle-blue"></div></li>
+                                <li class="color-circle" onclick="websiteColorChanging('pink')"><div class="color-circle-pink" ></div></li>
+                                <li class="color-circle" onclick="websiteColorChanging('green')"><div class="color-circle-green"></div></li>
+                                <li class="color-circle" onclick="websiteColorChanging('blue')"><div class="color-circle-blue"></div></li>
                             </ul>
                         </div>
                     </div>
@@ -78,13 +78,13 @@
                             <ul class="contact-elements">
                                 <li class="contact-element"> 
                                     <div class="distinct">E-mail: </div>
-                                    <a href="mailto:oliwiagowor@gmail.com">oliwiagowor@gmail.com</a> 
-                                    <div class="copy"><img src="icons/copy-to-clipboard-icon-black.svg" class="copy-icon" height="20px" width="20px"></div>
+                                    <a href="mailto:oliwiagowor@gmail.com"><div class="to-copy" id="to-copy-email">oliwiagowor@gmail.com</div></a> 
+                                    <button class="copy-button" id="copy-button-email"><img src="icons/copy-to-clipboard-icon-black.svg" class="copy-icon" height="20px" width="20px"></button>
                                 </li>
                                 <li class="contact-element">
                                     <div class="distinct">Phone: </div>
-                                    <a href="tel:123456789">123456789</a> 
-                                    <div class="copy"><img src="icons/copy-to-clipboard-icon-black.svg" class="copy-icon" height="20px" width="20px"></div>
+                                    <a href="tel:123456789"><div class="to-copy" id="to-copy-phone">123456789</div></a> 
+                                    <button class="copy-button" id="copy-button-phone"><img src="icons/copy-to-clipboard-icon-black.svg" class="copy-icon" height="20px" width="20px"></button>
                                 </li>
                             </ul>
                         </div>
