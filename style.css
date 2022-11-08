@@ -38,6 +38,8 @@ body textarea:focus {
     align-items: center;
     height: 60px;
     margin: 0px;
+    margin-left: calc(15% - (110px - 47.72px)/2);
+    margin-right: 15%;
 }
 
 .page-nav .nav-container .nav-mobile {
@@ -180,7 +182,7 @@ body textarea:focus {
 .page-nav .nav-container .right-icons {
     display: inline-flex;
     gap: 1em;
-    padding: 0 3.8em;
+    padding: 0 0 0 3.8em;
     position: relative;
 }
 
@@ -239,7 +241,7 @@ body textarea:focus {
     justify-content: center;
     align-items: center;
     top: 60px;
-    right: 2em;
+    right: calc(15% - 30x);
     width: 100px;  
     height: auto;
     background-color: var(--primary-background-color);
@@ -462,13 +464,19 @@ main .main-content {
     color: var(--main-color-light);
 }
 
+.main-content .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-content .about .about-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 100%;
+    width: 70%;
     margin-bottom: 180px;
 }
 
@@ -517,7 +525,6 @@ main .main-content {
 
 .main-content .about .about-container .about-content .about-text-container {
     display: block;
-    width: 320px;
     text-align: justify;
 }
 
@@ -564,6 +571,10 @@ main .main-content {
 .main-content .about .about-container .about-content .about-grid .about-elements-grid li a {
     text-decoration: none;
     color: inherit;
+}
+
+.main-content .about .about-container .about-content .about-grid .about-elements-grid li a:hover {
+    color: var(--main-color);
 }
 
 .main-content .about .about-container .about-content .about-grid .languages-container {
@@ -640,15 +651,18 @@ main .main-content {
     padding-right: 8px;
 }
 
-.main-content .education .education-container {
+.main-content .education {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .main-content .education .education-container {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
     margin-bottom: 180px;
 }
 
@@ -679,11 +693,10 @@ main .main-content {
 .main-content .education .education-content {
     display: flex;
 	flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: calc(100% - 125px);
     color: var(--secondary-text-color);
+    width: 100%;
 }
 
 .main-content .education .education-content .education-image {
@@ -751,13 +764,20 @@ main .main-content {
     margin-right: 10px;
 }
 
+.main-content .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .main-content .skills .skills-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 180px;
-    width: 100%;
+    width: 70%;
     position: relative;
 }
 
@@ -799,9 +819,9 @@ main .main-content {
 .main-content .skills .skills-container .skills-content {
     display: flex;
 	flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     z-index: 2;
 }
 
@@ -817,7 +837,7 @@ main .main-content {
     margin: 0;
     width: 100%;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 4%;
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements li {
@@ -885,16 +905,25 @@ main .main-content {
     transform: rotate(-135deg);
 }
 
+.main-content .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .main-content .projects .projects-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 180px;
+    width: 70%;
 }
 
 .main-content .projects .projects-container .projects-header-container {
     margin-bottom: 40px;
+    z-index: 2;
 }
 
 .main-content .projects .projects-container .projects-header-container .projects-header {
@@ -938,11 +967,11 @@ main .main-content {
 }
 
 .main-content .projects .projects-container .projects-content .slide-buttons .button-left {
-    right: 100px;
+    right: 115px;
 }
 
 .main-content .projects .projects-container .projects-content .slide-buttons .button-right {
-    left: 100px;
+    left: 115px;
 }
 
 .main-content .projects .projects-container .projects-content .button-left:hover, .main-content .projects .projects-container .projects-content .button-right:hover {
@@ -1027,11 +1056,18 @@ main .main-content {
     transition: 1s;
 }
 
+.main-content .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .main-content .contact .contact-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 70%
 }
 
 .main-content .contact .contact-container .contact-header-container {
@@ -1063,14 +1099,7 @@ main .main-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: calc(100% - 100px);
-    margin: 0 50px;
-    width: 600px;
-}
-
-.main-content .contact .contact-container .contact-form {
-    width: 1000px;
-    max-width: calc(100% - 100px);
+    width: 100%;
 }
 
 .main-content .contact .contact-container .contact-form .form-header {
@@ -1088,8 +1117,7 @@ main .main-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    max-width: calc(100%);
+    width: 100%
 }
 
 .main-content .contact .contact-container .contact-form .contact-form-elements label {
@@ -1108,39 +1136,28 @@ main .main-content {
     background-color: var(--accent-color-light);
 }
 
-.main-content .contact .contact-container .contact-form .contact-form-elements .topic-input-container {
-    max-width: 100%;
+.main-content .contact .contact-container .contact-form .contact-form-elements div {
+    width: 100%;
 }
 
-.main-content .contact .contact-container .contact-form .contact-form-elements .topic-input {
-    width: 550px;
-    max-width: 100%;
+.main-content .contact .contact-container .contact-form .contact-form-elements input {
+    width: calc(100% - 15px);
     height: 40px;
 }
 
-.main-content .contact .contact-container .contact-form .contact-form-elements .message-input-container {
-    max-width: 100%;
-}
 
 .main-content .contact .contact-container .contact-form .contact-form-elements .message-input {
-    width: 550px;
-    max-width: 100%;
     resize: none;
+    width: calc(100% - 15px);
 }
 
 .main-content .contact .contact-container .contact-form .contact-form-elements .top-elements {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-}
-
-.main-content .contact .contact-container .contact-form .contact-form-elements .top-elements .name-input-container, .main-content .contact .contact-container .contact-form .contact-form-elements .top-elements .email-input-container {
-    max-width: 100%;
+    width: 100%;
 }
 
 .main-content .contact .contact-container .contact-form .contact-form-elements .top-elements input {
-    width: 550px;
-    max-width: 100%;
     height: 40px;
 }
 
@@ -1220,7 +1237,6 @@ footer .footer {
     .page-nav .nav-container .header-nav {
         display: inline-block;
         margin: 0;
-        padding-left: 4em;
         padding-right: 2em;
     }
 
@@ -1344,17 +1360,13 @@ footer .footer {
     .main-content .about .about-container .second-blob {
         height: 600px;
         width: 905px;
-        left: -150px;
+        left: -360px;
         top: 350px;
     }
 
     .main-content .about .about-container .about-header-container {
         padding-bottom: 40px;
     }      
-
-    .main-content .about .about-container .about-content .about-text-container {
-        width: 58%;
-    }
 
     .main-content .about .about-container .about-content .about-grid {
         flex-direction: row;
@@ -1396,10 +1408,14 @@ footer .footer {
         display: inline-block;
         height: 756px;
         width: 801px;
-        right: -150px;
+        right: -300px;
         z-index: 0;
-        top: 50px;
+        top: 60px;
     }    
+
+    .main-content .skills .skills-container .skills-content .skills-elements {
+        justify-content: space-between;
+    }
 
     .main-content .projects .projects-container .projects-content .slide-buttons {
         position: relative;
@@ -1412,11 +1428,11 @@ footer .footer {
     }
 
     .main-content .projects .projects-container .projects-content .slide-buttons .button-left {
-        right: 200px;
+        right: 190px;
     }
     
     .main-content .projects .projects-container .projects-content .slide-buttons .button-right {
-        left: 200px;
+        left: 190px;
     }
 
     .main-content .projects .projects-container .projects-content .slide-buttons span {
@@ -1449,40 +1465,23 @@ footer .footer {
     }
     
     .main-content .projects .projects-container .projects-content .projects-elements .project-element.left {
-        transform: translate(-430px, 25px);  
+        transform: translate(-458px, 25px);  
     }
     
     .main-content .projects .projects-container .projects-content .projects-elements .project-element.middle {
-            height: 460px;
-            width: 390px;
+        height: 460px;
+        width: 390px;
     }
     
     .main-content .projects .projects-container .projects-content .projects-elements .project-element.right {
-        transform: translate(420px, 25px);  
-    }
-    
-    .main-content .contact .contact-container .contact-form {
-        width: 1000px;
-        max-width: calc(100% - 200px);
-        margin: 0 100px;
-    }
-
-    .main-content .contact .contact-container .contact-form .contact-form-elements .topic-input {
-        width: 962px;
-    }
-    
-    .main-content .contact .contact-container .contact-form .contact-form-elements .message-input {
-        width: 962px;
+        transform: translate(459px, 25px);  
     }
 
     .main-content .contact .contact-container .contact-form .contact-form-elements .top-elements {
         flex-direction: row;
-        gap: 43px;
+        gap: 55px;
     }
-    
-    .main-content .contact .contact-container .contact-form .contact-form-elements .top-elements input {
-        width: 450px;
-    }
+
 
     .main-content .contact .contact-container .other-ways-contact {
         margin-bottom: 0px;
