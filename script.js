@@ -144,3 +144,16 @@ function copyPhone() {
 	});
 }
 copyPhone();
+
+function sendEmail () {
+	Email.send({
+		SecureToken : "06c2963a-ffa7-47d6-88bb-9f6edbf9c782",
+		To : 'oliwiagowor@gmail.com',
+		From : 'oliwiagowor@gmail.com',
+		Subject : document.querySelector('#topic').value,
+		Body : "E-mail: " + document.querySelector('#email').value.trim() + "<br>" + 
+		"Name: " + document.querySelector('#name').value.trim() + "<br>" + "Message: " + document.querySelector('#message').value.trim()
+	}).then(
+	  message => alert("Message sent!")
+	);
+}

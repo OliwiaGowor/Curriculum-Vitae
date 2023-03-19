@@ -830,14 +830,13 @@ main .main-content {
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements {
-    display: flex;
     justify-content: center;
     padding: 0;
     align-items: center;
-    margin: 0;
     width: 100%;
-    flex-wrap: wrap;
-    gap: 4%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements li {
@@ -853,6 +852,7 @@ main .main-content {
     box-shadow: 0 0 10px 5px var(--shadow-color);
     background-color: var(--primary-background-color);   
     margin: 50px 0px 0px 0px;
+    justify-self: center;
 }
 
 .main-content .skills .skills-container .skills-content .skills-elements li:hover {
@@ -864,45 +864,6 @@ main .main-content {
 .main-content .skills .skills-container .skills-content .skills-elements li .element-text {
     margin: 0;
     padding-top: 8px;
-}
-
-.main-content .skills .skills-container .skills-content .skills-elements li .arrow {
-    display: inline-block;
-    position: relative;
-    width: fit-content;
-    height: 1px;
-}
-
-.main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-line {
-    display: inline-block;
-    position: relative;
-    width: 13px;
-    height: 2px;
-    background-color: var(--main-color);
-    top: -9px;
-    left: 60px;
-}
-
-.main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-left {
-    display: inline-block;
-    position: relative;
-    width: 10px;
-    height: 2px;
-    background-color: var(--main-color);
-    top: -6px;
-    left: 53px;
-    transform: rotate(135deg);
-}
-
-.main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-right {
-    display: inline-block;
-    position: relative;
-    width: 10px;
-    height: 2px;
-    background-color: var(--main-color);
-    top: -12px;
-    left: 43px;
-    transform: rotate(-135deg);
 }
 
 .main-content .projects {
@@ -1102,6 +1063,23 @@ main .main-content {
     width: 100%;
 }
 
+.main-content .contact .contact-container .contact-form button {
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: var(--accent-color);
+    color: white;
+    border: 0;
+    padding: 18px 32px;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.main-content .about .about-container button:active {
+    background-color: var(--main-color);
+    color: var(--main-color-light);
+}
+
+
 .main-content .contact .contact-container .contact-form .form-header {
     color: var(--accent-color);
     margin: 7px;
@@ -1229,6 +1207,12 @@ footer .footer {
     bottom: 0;
 }
 
+@media screen and (min-width: 600px) {
+    .main-content .skills .skills-container .skills-content .skills-elements {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media screen and (min-width: 1062px) {
     .page-nav .nav-container .nav-mobile .hamburger-icon-mobile {
         display: none;
@@ -1297,24 +1281,13 @@ footer .footer {
         display: none;
     }
 
+    .main-content .skills .skills-container .skills-content .skills-elements {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .main-content .skills .skills-container .skills-content .skills-elements li {
         width: 170px;
         height: 200px;
-    }
-    
-    .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-line {
-        top: -2px;
-        left: 65px;
-    }
-    
-    .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-left {
-        top: 1px;
-        left: 58px;
-    }
-    
-    .main-content .skills .skills-container .skills-content .skills-elements li .arrow .arrow-right {
-        top: -5px;
-        left: 48px;
     }
 }
 
@@ -1413,18 +1386,14 @@ footer .footer {
         top: 60px;
     }    
 
-    .main-content .skills .skills-container .skills-content .skills-elements {
-        justify-content: space-between;
-    }
-
     .main-content .projects .projects-container .projects-content .slide-buttons {
         position: relative;
         bottom: 200px;
     }
 
    .main-content .projects .projects-container .projects-content .slide-buttons div {
-    height: 70px;
-    width: 70px;
+        height: 70px;
+        width: 70px;
     }
 
     .main-content .projects .projects-container .projects-content .slide-buttons .button-left {
@@ -1513,4 +1482,10 @@ footer .footer {
         width: 962px;
     }
 
+}
+
+@media screen and (min-width: 1500px) {
+    .main-content .skills .skills-container .skills-content .skills-elements {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
