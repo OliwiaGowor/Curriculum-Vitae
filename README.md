@@ -1,5 +1,4 @@
 # Curriculum-Vitae
-Curriculum Vitae in a form of a responsive website.
 ## Description
 This Website contains my Curriculum Vitae and portfolio with completed projects in a form of a responsive website. 
 
