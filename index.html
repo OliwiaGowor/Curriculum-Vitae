@@ -96,7 +96,7 @@
             <div class="about" id="about">
                 <div class="about-container">
                     <div class="about-header-container">
-                        <h1 class="about-header">ABOUT ME</h1>
+                        <h1 class="section-header">ABOUT ME</h1>
                         <div class="lines">
                             <span class="line-longer"></span><span class="line-shorter"></span>
                         </div>
@@ -125,20 +125,31 @@
                                     </li>
                                     <li>
                                         <div class="languages-dot"></div>
-                                        <div class="distinct">English: </div>B2/C1
+                                        <div class="distinct">English: </div>C1
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <button class="button-CV"><img src="icons/download-icon.svg" class="download-icon" width="18px" height="18px">Download my CV</button>
+                    <div class="cv-buttons">
+                    <a href="./files/CV_Oliwia_Gowor_Eng.pdf" download target="_blank">
+                        <button class="button-CV"><img src="icons/download-icon.svg" class="download-icon" width="18px" height="18px">
+                            Download my CV in English
+                        </button>
+                    </a>
+                    <a href="./files/CV_Oliwia_Gowor.pdf" download target="_blank">
+                        <button class="button-CV"><img src="icons/download-icon.svg" class="download-icon" width="18px" height="18px">
+                            Download my CV in Polish
+                        </button>
+                    </a>
+                </div>
                 </div>
             </div>
                 
             <div class="education" id="education">
                 <div class="education-container">
                     <div class="education-header-container">
-                        <h1 class="education-header">EDUCATION</h1>
+                        <h1 class="section-header">EDUCATION</h1>
                         <div class="lines">
                             <span class="line-longer"></span> <span class="line-shorter"></span>
                         </div>
@@ -168,41 +179,41 @@
                 <div class="skills-container">
                     <div class="third-blob"></div>
                     <div class="skills-header-container">
-                        <h1 class="skills-header">MY SKILLS</h1>
+                        <h1 class="section-header">MY SKILLS</h1>
                         <div class="lines">
                             <span class="line-longer"></span> <span class="line-shorter"></span>
                         </div>
                     </div>
                     <p class="skills-text">I'm always open and ready to learn new skills and expand my knowledge!</p>
                     <div class="skills-content">
-                        <img src="photos/skills-photo.png" class="skills-photo" width="463px" height="450px">
+                        <img src="photos/skills-photo.png" class="skills-photo" width="463px" height="450px"/>
                         <ul class="skills-elements">
                             <li>
-                                <img src="icons/html-icon.png" class="html-icon" width="60px" height="70px">
+                                <img src="icons/html-icon.png" class="html-icon" width="60px" height="70px"/>
                                 <p class="element-text">HTML</p> 
                             </li>
                             <li>
-                                <img src="icons/css-icon.png" class="css-icon" width="60px" height="70px">
+                                <img src="icons/css-icon.png" class="css-icon" width="60px" height="70px"/>
                                 <p class="element-text">CSS/SCSS</p>
                             </li>
                             <li>
-                                <img src="icons/javascript-icon.png" class="sql-icon" width="70px" height="70px">
+                                <img src="icons/javascript-icon.png" class="sql-icon" width="70px" height="70px"/>
                                 <p class="element-text">JavaScript</p> 
                             </li>
                             <li>
-                                <img src="icons/typescript-icon.png" class="sql-icon" width="70px" height="70px">
+                                <img src="icons/typescript-icon.png" class="sql-icon" width="70px" height="70px"/>
                                 <p class="element-text">TypeScript</p> 
                             </li>
                             <li>
-                                <img src="icons/React-icon.png" class="sql-icon" width="80px" height="70px">
+                                <img src="icons/React-icon.png" class="sql-icon" width="80px" height="70px"/>
                                 <p class="element-text">React.js</p> 
                             </li>
                             <li>
-                                <img src="icons/cpp-icon.png" class="cpp-icon" width="65px" height="70px">
+                                <img src="icons/cpp-icon.png" class="cpp-icon" width="65px" height="70px"/>
                                 <p class="element-text">C++</p>
                             </li>
                             <li>
-                                <img src="icons/sql-icon.png" class="sql-icon" width="70px" height="70px">
+                                <img src="icons/sql-icon.png" class="sql-icon" width="70px" height="70px"/>
                                 <p class="element-text">SQL</p>
                             </li>
                         </ul>
@@ -213,7 +224,7 @@
             <div class="projects" id="projects">
                 <div class="projects-container">
                     <div class="projects-header-container">
-                        <h1 class="projects-header">PROJECTS</h1>
+                        <h1 class="section-header">PROJECTS</h1>
                         <div class="lines">
                             <span class="line-longer"></span> <span class="line-shorter"></span>
                         </div>
@@ -221,36 +232,35 @@
                     <div class="projects-content">
                         <ul class="projects-elements">
                             <li class="project-element">
-                                <h2 class="element-header">This interactive website :)</h2>
+                                <h2 class="element-header">Fiber Friend</h2>
                                 <div class="element-description">
-                                    <ul>
-                                        <li>This Website contains my interactive CV and portfolio with completed projects.</li>
-                                        <li>Website made with HTML, CSS and JavaScript.</li>
-                                    </ul>
+                                    <p>Web app made to help all fiber artists organize their projects, patterns and supplies.</p>
+                                    <p>Website made with React, TypeScript, SCSS and HTML. Also used components from Material UI.</p>
+                                    <img src="./photos/fiber-friend1" class="project-image" />
                                 </div>
                             </li>
                             <li class="project-element">
-                                <h2 class="element-header">Fiber friend</h2>
+                                <h2 class="element-header">This interactive website :)</h2>
                                 <div class="element-description">
-                                    <ul>
-                                        <li>Web app made to help all fiber artists organize their projects, patterns and supplies.</li>
-                                        <li>Website made with React, TypeScript, SCSS and HTML. Also used components from Material UI.</li>
-                                    </ul>
+                                    <p>This Website contains my interactive CV and portfolio with completed projects.</p>
+                                    <p>Website made with HTML, CSS and JavaScript.</p>
+                                    <img src="./photos/cv-page1.png" class="project-image" />
                                 </div>
                             </li>
                             <li class="project-element">
                                 <h2 class="element-header">Januszex – car rental</h2>
                                 <div class="element-description">
-                                    <ul>
-                                        <li>Website for car renting company. It was created as a final group project for my university class.</li>
-                                        <li>Website made with React, JavaScript, CSS and HTML.</li>
-                                    </ul>
+                                    <p>Website for car renting company. It was created as a final group project for my university class.</p>
+                                    <p>Website made with React, JavaScript, CSS and HTML.</p>
+                                    <img src="./photos/car-rental1" class="project-image" />
                                 </div>
                             </li>
                         </ul>
-                        <div class="slide-buttons">
-                            <div class="button-left" onclick="plusIndex(-1)"><span class="arrow-top"></span><span class="arrow-bottom"></span></div>
-                            <div class="button-right" onclick="plusIndex(1)"><span class="arrow-top"></span><span class="arrow-bottom"></span></div>
+                        <div class="slide-buttons-container">
+                            <div class="slide-buttons">
+                                <div class="button-left" onclick="plusIndex(-1)"><span class="arrow-top"></span><span class="arrow-bottom"></span></div>
+                                <div class="button-right" onclick="plusIndex(1)"><span class="arrow-top"></span><span class="arrow-bottom"></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -259,7 +269,7 @@
             <div class="contact" id="contact">
                 <div class="contact-container">
                     <div class="contact-header-container">
-                        <h1 class="contact-header">CONTACT</h1>
+                        <h1 class="section-header">CONTACT</h1>
                         <div class="lines">
                             <span class="line-longer"></span> <span class="line-shorter"></span>
                         </div>
