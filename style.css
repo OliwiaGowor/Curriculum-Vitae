@@ -19,6 +19,7 @@ body textarea:focus {
     outline: none;
 }
 
+/* -------------------------------------------navbar------------------------------------------- */
 .page-nav {
     position: fixed;
     top: 0px;
@@ -264,6 +265,7 @@ body textarea:focus {
     font-size: 1em;
     padding: 0 1em;
     text-align: center;
+    color: var(--primary-text-color);
 }
 
 .page-nav .nav-container .right-icons .settings-icon-container .settings-dropdown ul.color-circle-elements{
@@ -338,7 +340,6 @@ main button:hover {
 
 main .main-content {
     display: block;
-    /*background-color: rgba(247, 247, 247);*/
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
@@ -349,6 +350,7 @@ main .main-content .section-header {
     margin: 0;
 }
 
+/* -------------------------------------------home------------------------------------------- */
 .main-content .home .home-blob {
     display: none;
 }
@@ -388,12 +390,6 @@ main .main-content .section-header {
     display: inline;
     color: var(--main-color);
 }
-
-/*.main-content .home .home-container .home-vertical-line {
-    height: 3px;
-    width: 600px;
-    background-color: rgb(0, 0, 0);
-}*/
 
 .main-content .home .home-container .home-front-elements .introduction {
     font-size: 20px;
@@ -474,6 +470,7 @@ main .main-content .section-header {
     color: var(--main-color-light);
 }
 
+/* -------------------------------------------about------------------------------------------- */
 .main-content .about {
     display: flex;
     align-items: center;
@@ -668,6 +665,7 @@ main .main-content .section-header {
     padding-right: 8px;
 }
 
+/* -------------------------------------------education------------------------------------------- */
 .main-content .education {
     display: flex;
     justify-content: center;
@@ -728,7 +726,6 @@ main .main-content .section-header {
     padding-right: 0.75em;
     padding-bottom: 1em;
     margin: 0;
-    /*box-shadow: 0 0 10px 5px var(--shadow-color);*/
 }
 
 .main-content .education .education-content .education-elements .education-element {
@@ -777,6 +774,7 @@ main .main-content .section-header {
     margin-right: 10px;
 }
 
+/* -------------------------------------------skills------------------------------------------- */
 .main-content .skills {
     display: flex;
     justify-content: center;
@@ -875,6 +873,7 @@ main .main-content .section-header {
     padding-top: 8px;
 }
 
+/* -------------------------------------------projects------------------------------------------- */
 .main-content .projects {
     display: flex;
     flex-direction: column;
@@ -1065,6 +1064,7 @@ main .main-content .section-header {
     margin-top: 40px;
 }
 
+/* -------------------------------------------contact------------------------------------------- */
 .main-content .contact {
     display: flex;
     align-items: center;
@@ -1225,6 +1225,7 @@ main .main-content .section-header {
     margin-right: 5px;
 }
 
+/*-------------------------------------------footer------------------------------------------- */
 footer .footer {
     display: flex;
     flex-wrap: nowrap;
@@ -1251,6 +1252,7 @@ footer .footer {
     bottom: 0;
 }
 
+/*-------------------------------------------media------------------------------------------- */
 @media screen and (min-width: 600px) {
     .main-content .skills .skills-container .skills-content .skills-elements {
         grid-template-columns: repeat(2, 1fr);
